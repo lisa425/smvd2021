@@ -1,1 +1,48 @@
-/*메인페이지*/
+@import "./reset.css";
+
+.mainpage{
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav-2020,
+.exhibition-nav,
+.guestbook-nav{
+    border:3px solid black;
+    height:100vh;
+    display:block;
+}
+
+.nav-2021{
+    display: flex;
+    align-items: center;
+}
+
+.nav-2020{
+    background: white;
+    width: 57px ;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-2020 span{
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.exhibition-nav{
+    background:#FF6632;
+    width: 78px;
+    color:black;
+}
+.guestbook-nav{
+    background: black;
+    width: 57px;
+    color:white;
+}
