@@ -24,11 +24,11 @@
 
 .nav-2020{
     background: white;
-    width: 57px ;
+    width: 71px;
     color:black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .nav-2020 span{
@@ -38,11 +38,11 @@
 
 .exhibition-nav{
     background:#FF6632;
-    width: 78px;
+    width: 98px;
     color:black;
 }
 .guestbook-nav{
     background: black;
-    width: 57px;
+    width: 50px;
     color:white;
 }

@@ -1,1 +1,22 @@
 /* rotation bar, 최상단 메뉴 이름(exhibition,guestbook),백버튼 스타일 지정 */
+@import "./reset.css";
+
+.ezkorry-roller {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.header-item a{
+    color:white;
+}
+.ezkorry-roller .header-item span {
+  position:relative;
+  display: inline-block;
+  top:-2px;
+  margin:0 4px;
+  font-size: 18px;
+  font-family: "Neue Haas Grotesk Text Pro Md";
+}
