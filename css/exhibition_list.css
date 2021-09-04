@@ -1,18 +1,14 @@
 /*리스트 페이지 기본 레이아웃*/
 @import "./reset.css";
 
+input:focus{
+    border:none;
+}
 .exhibition{
     width:100vw;
     position: relative;
 }
-.menu-title{
-    font-size: 7.7vw;
-    font-family: "Neue Haas Grotesk Text Pro Bd";
-    position: fixed;
-    top:50px;
-    right:5vw;
-    z-index: 10;
-}
+
 .category{
     display: flex;
     flex-direction: column;
@@ -41,8 +37,7 @@
 
 .exhibition-list{
     width:100vw;
-    height: calc(100vh - 35px);
-    overflow:scroll;
+    min-height: calc(100vh - 35px);
     position: relative;
     top:35px;
 }
@@ -51,7 +46,11 @@
     font-family: "Neue Haas Grotesk Text Pro Md"
 }
 .art-category li{
-    padding: 0.3vw;
+    margin: 0.8vw 0.3vw;
+}
+.art-category li a{
+    text-decoration: none;
+    color: black;
 }
 .list-search{
     position: relative;
@@ -101,6 +100,7 @@
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+    margin:5% 0;
 }
 .list-item{
     margin:3px;
@@ -110,7 +110,7 @@
 }
 .list-info{
     color:#fff;
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.7);
     bottom:0px;
     opacity:0;
     position: absolute;
@@ -165,4 +165,7 @@
 }
 #graphic{
     height: 100%;
+}
+.art-category li:nth-child(1){
+    text-decoration: underline;
 }

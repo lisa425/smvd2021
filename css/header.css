@@ -1,6 +1,19 @@
 /* rotation bar, 최상단 메뉴 이름(exhibition,guestbook),백버튼 스타일 지정 */
 @import "./reset.css";
 
+.header{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 15;
+}
+.menu-title{
+    font-size: 7.7vw;
+    font-family: "Neue Haas Grotesk Text Pro Bd";
+    position: fixed;
+    top:50px;
+    right:5vw;
+}
 .ezkorry-roller {
   width:100vw;
   background-color: #000;
@@ -8,9 +21,6 @@
   overflow: hidden;
   white-space: nowrap;
   padding: 8px 0;
-  z-index: 15;
-  position: absolute;
-  top:0;
 }
 .ezkorry-roller-wrapper:nth-child(1){
 
