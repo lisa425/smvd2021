@@ -1,0 +1,73 @@
+.exhibition-detail{
+    width:1000px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin:25vh auto 5vh auto;
+}
+.artwork-contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:100%;
+}
+.artwork-contents p{
+    line-height: 1.5em;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.artwork-contents .artwork-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:18%;
+}
+
+.artwork-contents .student-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:38%;
+}
+.artwork-contents .student-info .email{
+    margin-left: 7%;
+}
+.artwork-contents .artwork-text{
+    width:40%;
+}
+.artwork-contents .artwork-text p{
+    width:100%;
+}
+
+
+.artwork-images{
+    width:100%;
+    margin-top:5vh;
+}
+.artwork-images img{
+    width:100%;
+    margin:0;
+}
+.exhibition-detail hr{
+    border:none;
+    background:black;
+    height: 1px;
+    width:100%;
+    margin:2.3vw 0;
+}
+.license{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.license p{
+    font-family:"Neue Haas Grotesk Text Pro Rg";
+    font-size:0.65em;
+    margin:0.5em;
+    text-align: center;
+}
+.license p span{
+    font-family: 'Noto Sans KR';
+    font-weight:400;
+}

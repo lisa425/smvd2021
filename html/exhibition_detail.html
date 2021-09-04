@@ -5,21 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/header_detail.css">
+    <link rel="stylesheet" href="../css/exhibition_detail.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js?ver=5.3.2"></script>
 </head>
 <body>
-    <header class="header ezkorry-roller">
-            <span class="header-item">
-                <a href="./index.html">
-                    <span>SMVD 2021 GRAD SHOW</span>
-                    <img class="header-polygon" src="../assets/images/header_polygon.svg" alt="little polygon"/>
-                </a>
-            </span>
+    <header class="header">
+        <div class="ezkorry-roller">
+                <span class="header-item">
+                    <a href="./index.html">
+                        <span>SMVD 2021 GRAD SHOW</span>
+                        <img class="header-polygon" src="../assets/images/header_polygon.svg" alt="little polygon"/>
+                    </a>
+                </span>
+        </div>
+        <div class="part">
+            <!-- 백 버튼 누를 시 list url로 넘어가야 합니다. 현재는 list 템플릿으로 이동 -->
+            <button class="back-btn"><a href="./exhibition_list.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a></button>
+            <h1 class="menu-title">Exhibition</h1>
+        </div>
     </header>
+
     <section class="exhibition-detail">
-        <article class=""
+        <article class="artwork-contents">
+            <div class="artwork-info">
+                <p class="title">요상한 독일어 사전</p>
+                <div class="artwork-category">
+                    <p>UX/UI</p>
+                    <p>3D Motion</p>
+                    <p>Branding</p>
+                </div>
+            </div>
+            <div class="student-info">
+                <div class="name">
+                    <p>김하열음</p>
+                    <p>Sonia Lee</p>
+                </div>
+                <div class="email">
+                    <p>codnjs984@sookmyung.ac.kr</p>
+                    <p>instagram@chxxwn</p>
+                </div>
+            </div>
+            <div class="artwork-text">
+                <p>역시 마찬가지로, 단순히 고통이라는 이유 때문에 고통 그 자체를 사랑하거나 추구하거나 소유하려는 자는 없다. 다만 노역과 고통이 아주 큰 즐거움을 선사하는 상황이 때로는 발생하기 때문에 고통을 찾는 사람이 있는 것이다. 간단한 예를 들자면, 모종의 이익을 얻을 수도 없는데 힘든 육체적 노력을 기꺼이 할 </p>
+            </div>
+        </article>
+
+        <article class="artwork-images">
+            <img src="../assets/images/005.jpeg" alt="artwork image">
+            <img src="../assets/images/005.jpeg" alt="artwork image">
+            <img src="../assets/images/005.jpeg" alt="artwork image">
+        </article>
+        <hr>
+        <div class="license">
+            <p>〈Entry:<span>참여자들</span>〉2021 SMVD Graduation Exhibition</p>
+            <p>© 2021 Sookmyung W. Univ Visual &amp; Media Design All Rights Reserved.</p>
+        </div>
     </section>
 
 </body>
