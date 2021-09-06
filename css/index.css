@@ -15,6 +15,7 @@
     border:3px solid black;
     height:100vh;
     display:block;
+    writing-mode: vertical-rl
 }
 
 .nav-2021{
@@ -33,7 +34,7 @@
 }
 .nav-2020 span{
     display: inline-block;
-    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
 }
 
 .exhibition-nav{
