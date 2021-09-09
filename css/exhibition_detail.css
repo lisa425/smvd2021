@@ -62,12 +62,11 @@
     align-items: center;
 }
 .license p{
-    font-family:"Neue Haas Grotesk Text Pro Rg";
+    font-weight: 400;
     font-size:0.65em;
     margin:0.5em;
     text-align: center;
 }
 .license p span{
-    font-family: 'Noto Sans KR';
     font-weight:300;
 }

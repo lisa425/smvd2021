@@ -81,9 +81,11 @@
   justify-content: center;
   background-color: #fff;
   width:0;
+  height:100vh;
   visibility: hidden;
   position: relative;
   transition:0.3s;
+  overflow: scroll;
 }
 
 .exhibition-introduction *{
@@ -94,13 +96,14 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width:881px;
-    margin-top:calc(5vh - 21px);
+    margin:5vh 0;
 }
 
-.exhibition-introduction .intro-wrapper section{
-    margin:21px 0;
+.exhibition-introduction .intro-wrapper hr{
+    width:100%;
+    margin-bottom:32px;
 }
 
 .school-navigation{
@@ -135,7 +138,7 @@
     font-weight: 500;
 }
 .main-title .title-name{
-    margin-top:76px;
+    margin:76px 0;
     line-height: 32px;
     font-size: 25px;
     font-weight: 400;
@@ -147,6 +150,94 @@
 .main-title .title-name p span{
     position: relative;
     left:-15px;
+}
+
+.section-title{
+    width:100%;
+    font-size:28px;
+    font-weight:500;
+}
+.section-title span{
+    margin-left:16px;
+    font-weight:400;
+}
+
+.exhibition-overview{
+    width:100%;
+}
+.overview-text{
+    padding-left:64px;
+    width:calc(100% - 64px);
+    margin-top:40px;
+    margin-bottom: 76px;
+}
+.overview-text p{
+    font-size:18px;
+    font-weight:400;
+    line-height: 28px;
+}
+
+
+.exhibition-credit{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exhibition-credit .credit-list{
+    width:calc(100% - 64px);
+    padding-left:64px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.exhibition-credit .entry-btn{
+    width:722px;
+    height:71px;
+    font-weight:700;
+    font-size:28px;
+    border:2px solid black;
+    background:white;
+    margin-bottom: 69px;
+}
+.exhibition-credit .entry-btn:hover{
+    background:#FF6632;
+}
+.credit-list{
+    margin:41px 0 76px 0;
+}
+.credit-list div{
+    margin-bottom:30px;
+    line-height: 25px;
+    font-size:18px;
+}
+.credit-list p{
+    font-weight: 400;
+}
+.credit-list .credit-kr h3{
+    font-weight:700;
+    margin:3px 0;
+}
+.credit-list .credit-en h3{
+    font-weight:500;
+    margin:3px 0;
+}
+
+
+.license{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:40px;
+}
+.license p{
+    font-weight: 400;
+    font-size:0.65em;
+    margin:0.5em;
+    text-align: center;
+}
+.license p span{
+    font-weight:300;
 }
 
 /*=============2021년도 전시 게스트북 네비게이션 섹션============*/
