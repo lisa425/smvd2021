@@ -85,7 +85,7 @@ textarea:focus{
     border:3px solid #000000;
     border-top:none;
     margin:0;
-    padding:0 0 5px 0;
+    padding:0;
     color:white;
 }
 .guestbook-create-form{
@@ -94,7 +94,7 @@ textarea:focus{
     height:100%;
     display: grid;
     grid-template-columns: repeat(15,1fr);
-    grid-template-rows: 30% 67%;
+    grid-template-rows: 30% 70%;
     color:white;
 }
 .create-select{
@@ -110,6 +110,7 @@ textarea:focus{
 .create-select select{
     color:white;
     font-size: 16px;
+    padding-top:3px;
 }
 .text-input{
     grid-row:2;

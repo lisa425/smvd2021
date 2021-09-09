@@ -1,49 +1,160 @@
 @import "./reset.css";
 
 .mainpage{
-    display:flex;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width:100vw;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+    left:0;
+    top:0;
 }
+
+/*nav bar style*/
 .nav-2020,
 .exhibition-nav,
 .guestbook-nav{
     border:3px solid black;
-    height:100vh;
+    border-top:none;
+    border-bottom: none;
+    height:90vh;
+    padding:5vh 0;
     display:block;
-    writing-mode: vertical-rl
-}
-
-.nav-2021{
+    writing-mode: vertical-lr;
+    z-index: 10;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    font-weight: 900;
+    font-family: 'Noto Sans KR';
+    font-size: 22px;
 }
 
+.label-name{
+    margin-bottom: 55px;
+}
+
+
+/*=============2020년도 전시 섹션============*/
 .nav-2020{
     background: white;
-    width: 71px;
+    width: 57px;
     color:black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    position: absolute;
+    left:0;
+    top:0;
 }
 .nav-2020 span{
     display: inline-block;
-    /* transform: rotate(90deg); */
+}
+
+
+
+/*=============2021년도 전시 섹션============*/
+.nav-2021{
+    display: flex;
+    align-items:flex-start;
+    position: absolute;
+    right:0;
+    top:0;
 }
 
 .exhibition-nav{
     background:#FF6632;
-    width: 98px;
+    width: 79px;
+    color:black;
+    position: relative;
+    right:0;
+    cursor: pointer;
+}
+.exhibition-nav .label-bottom .label-name{
+    position: relative;
+    bottom:-2px;
+}
+#entry-arrow{
+    transform: rotate(180deg);
+    height: 29px;
+}
+
+/* 2021 exhibition content style */
+.exhibition-introduction{
+  display:flex;
+  justify-content: center;
+  background-color: #fff;
+  width:0;
+  visibility: hidden;
+  position: relative;
+  transition:0.3s;
+}
+
+.exhibition-introduction *{
     color:black;
 }
+
+.exhibition-introduction .intro-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:881px;
+    margin-top:calc(5vh - 21px);
+}
+
+.exhibition-introduction .intro-wrapper section{
+    margin:21px 0;
+}
+
+.school-navigation{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.school-navigation img{
+    width:37px;
+}
+.school-navigation a{
+    margin:12px;
+    font-size:20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.main-title{
+    margin-top:31px;
+}
+.main-title a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title h1{
+    font-size: 125px;
+    font-weight: 900;
+}
+.main-title>a>p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.main-title .title-name{
+    margin-top:76px;
+    line-height: 32px;
+    font-size: 25px;
+    font-weight: 400;
+    width:613px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-title .title-name p span{
+    position: relative;
+    left:-15px;
+}
+
+/*=============2021년도 전시 게스트북 네비게이션 섹션============*/
 .guestbook-nav{
     background: black;
-    width: 50px;
+    width: 44px;
     color:white;
+    right:0;
+    top:0;
+    z-index: 100;
 }
