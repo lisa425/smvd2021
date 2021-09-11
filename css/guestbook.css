@@ -209,9 +209,18 @@ textarea:focus{
     }
     .text-input{
         padding:0 0 0 18px;
+        grid-column: span 12;
     }
     .submit-guestbook{
         padding:0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        grid-column: span 3;
+    }
+    .submit-guestbook:hover{
+        background:black;
     }
     
 }
