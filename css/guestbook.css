@@ -166,16 +166,18 @@ textarea:focus{
 
 @media screen and (max-width:1023px){
     .guestbook-wrapper{
-        max-width: 90%;
-        padding-top:10vh;
-        height: 83vh;
+        width: 90vw;
+        margin:0 auto;
+        height: 86vh;
     }
     .guestbook-list{
         width:90%;
         height:58%;
         border:2px solid #000;
+        padding:1% 4.5%;
     }
     .guestbook-create{
+        width:99%;
         height:33%;
         border: 2px solid black;
     }

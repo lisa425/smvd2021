@@ -35,9 +35,6 @@
   white-space: nowrap;
   padding: 8px 0;
 }
-.ezkorry-roller-wrapper:nth-child(1){
-
-}
 .header-item a{
     color:white;
 }
@@ -48,4 +45,30 @@
   margin:0 4px;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media screen and (max-width:480px){
+  .ezkorry-roller{
+    padding:5px 0;
+  }
+  .ezkorry-roller .header-item span{
+    font-size:13px;
+  }
+  .header-polygon{
+    width:13px;
+    height:13px;
+  }
+  .part{
+    width:100vw;
+    justify-content: center;
+    padding:0;
+    margin:0 auto;
+  }
+  .back-btn{
+    display: none;
+  }
+  .menu-title{
+    font-size: 28px;
+    margin-top:20px;
+  }
 }
