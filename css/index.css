@@ -97,7 +97,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width:881px;
+    max-width:881px;
     margin:5vh 0;
 }
 
@@ -199,6 +199,8 @@
     border:2px solid black;
     background:white;
     margin-bottom: 69px;
+    transition:0.1s;
+    cursor: pointer;
 }
 .exhibition-credit .entry-btn:hover{
     background:#FF6632;

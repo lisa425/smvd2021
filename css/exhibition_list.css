@@ -157,8 +157,16 @@ input:focus{
 #graphic{
     min-height: calc(100vh - 35px);
 }
-.art-category li:nth-child(1){
+
+#show-category-0 #graphic_nav,
+#show-category-1 #branding_nav,
+#show-category-2 #editorial_nav,
+#show-category-3 #uxui_nav,
+#show-category-4 #game_nav,
+#show-category-5 #motion_nav,
+#show-category-6 #illustration_nav{
     text-decoration: underline;
+    padding-bottom: 3px;
 }
 
 .guestbook-btn{
@@ -187,4 +195,24 @@ input:focus{
     position: absolute;
     left: 20%;
     top:31%;
+}
+
+@keyframes arrow_animation{
+    50%{
+        bottom:35px;
+        opacity: 0.5;
+    }
+}
+
+#scroll_arrow{
+    display: none;
+}
+.scroll_arrow{
+    position: fixed;
+    display: block !important;
+    left:50vw;
+    bottom:45px;
+    opacity: 1;
+    transform: rotate(90deg);
+    animation: arrow_animation 2s ease-out infinite; 
 }
