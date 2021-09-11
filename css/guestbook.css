@@ -163,3 +163,55 @@ textarea:focus{
 .submit-guestbook:hover .submit-arrow{
     fill:black;
 }
+
+@media screen and (max-width:1023px){
+    .guestbook-wrapper{
+        max-width: 90%;
+        padding-top:10vh;
+        height: 83vh;
+    }
+    .guestbook-list{
+        width:90%;
+        height:58%;
+        border:2px solid #000;
+    }
+    .guestbook-create{
+        height:33%;
+        border: 2px solid black;
+    }
+    .guestbook-create-form{
+        grid-template-rows:20% 75%;
+    }
+    .guestbook-item{
+        font-size:13px;
+        padding:20px 0;
+    }
+    .guestbook-item .message{
+        margin-top:1em;
+    }
+    .message-info .created-at{
+        font-size: 10px;
+    }
+    .search-std{
+        font-size: 15px;
+        height: 7%;
+    }
+    .search-std select{
+        font-size: 15px;
+        border-bottom: 2px solid #000;
+    }
+    .create-select{
+        padding-left: 18px;
+        font-size: 15px;
+    }
+    .create-select select{
+        font-size:15px;
+    }
+    .text-input{
+        padding:0 0 0 18px;
+    }
+    .submit-guestbook{
+        padding:0;
+    }
+    
+}
