@@ -47,18 +47,22 @@ input:focus{
     position: relative;
     width:55%;
     height: 3vw;
+    border-bottom: 2px solid black;
 }
 .list-search-input{
     position: absolute;
     top:0;
     left:0;
     font-size:2vw;
-    width:100%;
+    width:calc(100% - 30px);
     color:black;
     background: transparent;
     border:none;
-    border-bottom: 2px solid black;
     padding:5px 0;
+}
+.list-search-input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
 }
 .list-search-input::placeholder{
     color:rgba(0,0,0,0.6);
@@ -143,6 +147,7 @@ input:focus{
     width:89%;
     overflow: hidden;
     font-size:0.9em;
+    font-weight: 500;
     margin:0.5em 0;
 }
 .orange-back{

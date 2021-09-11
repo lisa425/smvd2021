@@ -2,6 +2,7 @@
 select{
     border:none;
     background-color:transparent;
+    cursor: pointer;
 }
 input:focus{
     outline: none;
@@ -150,9 +151,15 @@ textarea:focus{
     background:black;
     color:white;
     font-size: 3vw;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.submit-guestbook .submit-arrow{
+    fill:white;
 }
 .submit-guestbook:hover{
     background:#FF6632;
-    color:black;
-    transition: 0.2s;
+}
+.submit-guestbook:hover .submit-arrow{
+    fill:black;
 }

@@ -24,6 +24,9 @@
     width:18%;
     font-weight:700;
 }
+.artwork-contents .artwork-info .artwork-category{
+    margin-top:37px;
+}
 
 .artwork-contents .student-info{
     display: flex;
