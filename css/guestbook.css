@@ -169,6 +169,7 @@ textarea:focus{
         width: 90vw;
         margin:0 auto;
         height: 86vh;
+        padding-top:9vh;
     }
     .guestbook-list{
         width:90%;

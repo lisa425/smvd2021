@@ -40,6 +40,7 @@
     display: flex;
     justify-content: flex-start;
     width:100%;
+    margin-bottom:10px;
 }
 .artwork-contents .student-info .student-item .name{
     min-width:28%;
@@ -55,7 +56,7 @@
 
 
 .artwork-images{
-    width:1000px;
+    width:100%;
     margin-top:5vh;
 }
 
@@ -65,7 +66,7 @@
 }
 
 .artwork-images .video{
-    width:1000px;
+    width:100%;
 }
 .artwork-images .video iframe{
     width:100%;
@@ -88,7 +89,89 @@
     font-size:0.65em;
     margin:0.5em;
     text-align: center;
+    line-height: 2em;
 }
 .license p span{
     font-weight:300;
+}
+
+
+@media screen and (max-width:1023px){
+    .exhibition-detail{
+        width:90vw;
+        margin:18vh auto 3vh auto;
+    }
+    .artwork-contents{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width:90vw;
+    }
+    .artwork-contents .artwork-info{
+        width:auto;
+        max-width:20%;
+    }
+    .artwork-contents .artwork-info .title{
+        font-size: 18px;
+    }
+    .artwork-contents .artwork-info .artwork-category{
+        font-size: 13px;
+        margin-top:5px;
+    }
+
+    .artwork-contents .student-info{
+        width:auto;
+        max-width:30%;
+    }
+    .artwork-contents .student-info .student-item{
+        flex-direction: column;
+    }
+    .artwork-contents .student-info .student-item .name{
+        font-size:15px;
+    }
+    .artwork-contents .student-info .student-item .contact{
+        font-size: 13px;
+    }
+    .artwork-contents .artwork-text{
+        margin-top:22px;
+        font-size: 14px;
+        width:40%;
+    }
+    .artwork-images{
+        margin:5vh 0;
+    }
+    .license p{
+        font-size: 6px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .artwork-contents{
+        justify-content: space-between;
+    }
+    .artwork-contents .artwork-info {
+        width:auto;
+        max-width:50%;
+    }
+    .artwork-contents .artwork-info .title{
+        font-size: 5.5vw;
+    }
+    .artwork-contents .artwork-info .artwork-category{
+        font-size: 3vw;
+        margin-top:5px;
+    }
+    .artwork-contents .student-info{
+        width:auto;
+        max-width:50%;
+    }
+    .artwork-contents .student-info .student-item .name{
+        font-size:3.5vw;
+    }
+    .artwork-contents .student-info .student-item .contact{
+        font-size: 3vw;
+    }
+    .artwork-contents .artwork-text{
+        font-size: 14px;
+        width:100%;
+    }
 }
