@@ -22,19 +22,29 @@
     flex-direction: column;
     align-items: flex-start;
     width:18%;
+    font-weight:700;
 }
 
 .artwork-contents .student-info{
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     width:38%;
+    font-weight:700;
 }
-.artwork-contents .student-info .email{
-    margin-left: 7%;
+.artwork-contents .student-info .student-item{
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
 }
+.artwork-contents .student-info .student-item .name{
+    min-width:28%;
+}
+
 .artwork-contents .artwork-text{
     width:40%;
+    font-weight: 500;
 }
 .artwork-contents .artwork-text p{
     width:100%;
@@ -42,13 +52,22 @@
 
 
 .artwork-images{
-    width:100%;
+    width:1000px;
     margin-top:5vh;
 }
-.artwork-images img{
+
+.artwork-images *{
     width:100%;
     margin:0;
 }
+
+.artwork-images .video{
+    width:1000px;
+}
+.artwork-images .video iframe{
+    width:100%;
+}
+
 .exhibition-detail hr{
     border:none;
     background:black;
