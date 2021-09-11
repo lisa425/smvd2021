@@ -27,9 +27,9 @@ input:focus{
 
 .exhibition-list{
     width:100vw;
-    min-height: calc(100vh - 35px);
+    min-height: calc(100vh - 30px);
     position: relative;
-    top:35px;
+    top:30px;
 }
 .art-category{
     margin-top:6.5vw;
@@ -220,4 +220,36 @@ input:focus{
     opacity: 1;
     transform: rotate(90deg);
     animation: arrow_animation 2s ease-out infinite; 
+}
+
+
+@media screen and (max-width:1023px) and (min-width:481px){
+    .category{
+        padding:7.5vh 0 6.6vh 3vw;
+        justify-content: flex-start;
+    }
+    .art-category{
+        font-size:3vw;
+    }
+    .list-search{
+        width:65%;
+        height:4vw;
+        margin-top:45px;
+    }
+    .list-search-input{
+        font-size:2.5vw;
+    }
+    .list-search-input::placeholder{
+        font-size: 2.5vw;
+    }
+    .list-wrapper{
+        width:68vw;
+    }
+    .list-item{
+        width: calc(70vw/3.2);
+        height: calc(70vw/3.2);
+    }
+    #graphic{
+        min-height: auto;
+    }
 }
