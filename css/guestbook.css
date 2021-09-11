@@ -25,7 +25,9 @@ textarea:focus{
 }
 .guestbook-wrapper{
     padding-top:7vh;
-    width:70vw;
+    /* width:70vw; */
+    max-width: 1024px;
+    margin:0 8vw;
     height:82vh;
     display: flex;
     flex-direction: column;
