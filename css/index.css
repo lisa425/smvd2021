@@ -70,6 +70,9 @@
     position: relative;
     bottom:-2px;
 }
+.exhibition-nav .label-bottom .mobile{
+    display: none;
+}
 #entry-arrow{
     transform: rotate(180deg);
     height: 29px;
@@ -171,6 +174,9 @@
     margin-top:40px;
     margin-bottom: 76px;
 }
+.overview-text p:nth-child(2) br{
+    display: none;
+}
 .overview-text p{
     font-size:18px;
     font-weight:400;
@@ -253,7 +259,7 @@
 }
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:1020px){
     .mainpage{
         display: flex;
         flex-direction: column-reverse;
@@ -263,26 +269,37 @@
     .guestbook-nav{
         border:2px solid black;
         height: none;
-        width:93vw;
+        width:92vw;
         writing-mode: horizontal-tb;
-        padding:3vw;
+        padding:0 4vw;
         font-size: 20px;
 
     }
     .nav-2020{
+        min-height:50px;
         height:auto;
         bottom:0;
         top:auto;
         align-items: flex-end;
+        padding: 10px 4vw;
+        border-left:none;
+        border-right:none;
     }
     .exhibition-nav{
-        height:145px;
+        height:135px;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
+        position: absolute;
+        top: 70px;
+        z-index: 11;
+        border-left:none;
+        border-right:none;
     }
     .guestbook-nav{
-        height:50px;
+        height:70px;
+        top: 0;
+        position: absolute;
     }
 
     .nav-2021{
@@ -295,21 +312,17 @@
         position: absolute;
         top:0;
     }
-    .exhibition-introduction{
-        width:100vw;
-    }
+
     .exhibition-nav .label-bottom {
         width:100%;
     }
-    .exhibition-nav .label-bottom .label-name{
-        transform: rotate(-90deg);
-        transform-origin: left;
-    }
+
     .label-bottom {
         text-align: right;
         width:auto;
         display: flex;
         align-items: flex-end;
+        justify-content: space-between;
     }
     .label-top span{
         display: block;
@@ -318,5 +331,123 @@
     .label-name{
         margin-bottom: 2px;
         margin-right:10px;
+    }
+    .exhibition-nav .label-bottom .web{
+        display: none;
+    }
+    .exhibition-nav .label-bottom .mobile{
+        display: block;
+    }
+    .exhibition-nav .label-bottom .mobile span{
+        font-weight: 700;
+        font-size:18px;
+    }
+    #entry-arrow{
+        transform: rotate(90deg);
+        height: 20px;
+    }
+
+
+
+    .exhibition-introduction{
+        width:100vw;
+        position: absolute;
+        top: 205px;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        z-index: 10;
+    }
+    .exhibition-introduction::-webkit-scrollbar{
+        display: none;
+    }
+    .exhibition-introduction .intro-wrapper{
+        width:90%;
+        max-width: 600px;
+    }
+    .school-navigation{
+        display: none;
+    }
+    .school-navigation img{
+        display: none;
+    }
+    .main-title {
+        margin-top:0;
+    }
+    .main-title h1{
+        font-size:40px;
+    }
+    .main-title>a>p{
+        font-size: 12px;
+    }
+    .main-title .title-name{
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: 40vw 50vw;
+        grid-template-rows: repeat(2,1fr);
+        font-size: 4.2vw;
+        line-height:1.4em;
+        margin:30px auto;
+    }
+    .main-title .title-name .title-kr{
+        grid-column: 1;
+        grid-row:1;
+        justify-self: start;
+    }
+    .main-title .title-name .title-en{
+        grid-column: 2;
+        grid-row:2;
+        justify-self: end;
+    }
+    .section-title{
+        font-size: 20px;
+    }
+    .overview-text{
+        padding-left: 0;
+        width:100%;
+        margin-bottom:25px;
+    }
+    .overview-text p:nth-child(2) br{
+        display: block;
+    }
+    .overview-text p{
+        text-align: justify;
+        font-size:15px;
+        line-height: 25px;
+        width:100%;
+        margin-bottom: 15px;
+    }
+    .exhibition-credit a{
+        width:100%;
+    }
+    .exhibition-credit .credit-list{
+        padding-left: 0;
+        width:100%;
+        margin:40px 0 25px 0;
+    }
+    .credit-list section{
+        width:45%;
+    }
+    .credit-list div{
+        font-size:13px;
+        margin-bottom: 26px;
+        line-height: 20px;
+    }
+    
+    .exhibition-credit .entry-btn{
+        width:100%;
+        height:40px;
+        font-size: 15px;
+        background-color: #FF6632;
+        margin-bottom:30px;
+    }
+}
+
+
+@media screen and (max-width:290px){
+    .section-title span{
+        display: block;
+        margin-left:0;
+        margin-top:16px;
     }
 }

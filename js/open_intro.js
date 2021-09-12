@@ -34,6 +34,15 @@ const openIntro = () => {
 
 //모바일에서 세로로 개요를 오픈
 const openMobileIntro = () => {
+    let content_height = window.innerHeight - 205;
+    console.log(content_height);
+    window.addEventListener('resize',function(event){
+        if(isOpen){
+            //개요 창이 열려있는 경우, 박스 안의 컨텐츠 너비를 창이 resize 될 때 마다 조절한다.
+            content_height = window.innerHeight - 205;
+            content.style.height = content_height+'px';
+        }
+    },true);
     label.onclick = () => {
         if(isOpen){
             //열린 상태에서 클릭->close
@@ -43,7 +52,7 @@ const openMobileIntro = () => {
             arrow.style.transform='rotate('+90+'deg)';
         }else{
             //닫힌 상태에서 클릭->open
-            content.style.height = 'auto';
+            content.style.height = content_height+'px';
             content.style.visibility='visible';
             isOpen = true;
             arrow.style.transform='rotate('+-90+'deg)';
