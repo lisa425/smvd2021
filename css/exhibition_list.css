@@ -253,3 +253,118 @@ input:focus{
         min-height: auto;
     }
 }
+
+@media screen and (max-width:480px){
+   .category{
+       align-items:center;
+       justify-content: center;
+       padding:7vh 20vw 3vh 20vw;
+       width:60vw;
+       height:20vh;
+       bottom:auto;
+       top:0;
+       position: fixed;
+       border-right: none;
+       border-bottom: 2px solid black;
+   } 
+   .art-category{
+       font-size: 3vh;
+       display: grid;
+       grid-template-columns: 26vw 26vw;
+       grid-template-rows: 4vh 4vh 4vh 4vh;
+       column-gap: 12vw;
+       margin-top:9vw;
+   }
+   .art-category li{
+       margin:0;
+   }
+   #graphic_nav{
+       grid-column: 1;
+       grid-row:1;
+   }
+   #branding_nav{
+       grid-column: 2;
+       grid-row:1;
+   }
+   #editorial_nav{
+       grid-column: 1;
+       grid-row:2;
+   }
+   #uxui_nav{
+       grid-column: 2;
+       grid-row:2;
+   }
+   #game_nav{
+       grid-column: 1;
+       grid-row:3;
+   }
+   #motion_nav{
+       grid-column: 2;
+       grid-row:3;
+   }
+   #illustration_nav{
+       grid-column: 1;
+       grid-row:4;
+   }
+
+   .list-search{
+       grid-column: 2;
+       grid-row:4;
+   }
+   .exhibition{
+       height: 100vh;
+       overflow: scroll;
+       background-color: #FF6632;
+   } 
+   .exhibition-list{
+       min-height: 100vh;
+       top:0;
+   }
+   #graphic{
+       min-height: auto;
+   }
+   .list-wrapper{
+       width:100%;
+       justify-content: space-between;
+   }
+   .list-item{
+       width:44vw;
+       height:auto;
+       margin:1vw 0;
+   }
+   .list-thumbnail{
+       height:44vw;
+   }
+   .list-info{
+        position: relative;
+        opacity:1;
+        background-color: transparent;
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:0;
+        color:black;
+        margin:5px 0 15px 0;
+   }
+   .list-info .title{
+       font-size:14px;
+       margin:0;
+   }
+   .list-info .std-name{
+       font-size:12px;
+       margin:2px 0 0 0;
+   }
+
+
+   .guestbook-btn{
+       width:80px;
+       height:80px;
+       font-size:11px;
+       right:15px;
+       bottom:10px;
+   }
+   .guestbook-btn p{
+       left:13%;
+       top:29%;
+   }
+}
