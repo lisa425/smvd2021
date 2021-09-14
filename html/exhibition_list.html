@@ -24,10 +24,11 @@
             <!-- back 버튼 클릭 시 홈페이지 url로 넘어가야 합니다. 현재는 index.html 파일로만 넘겨주고 있습니다.-->
             <button class="back-btn"><a href="../index.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a></button>
             <h1 class="menu-title">Exhibition</h1>
+            <button class="mobile nav-open-btn" onclick="openCategory()"><img src="../assets/images/mobile_open_category.svg" alt="카테고리"></button>
         </div>
     </header>
     <main class="exhibition">
-        <nav class="category">
+        <nav class="category" id="category">
             <ul class="art-category">
                 <li id="graphic_nav" onclick="clickCategory(this.id)"><a href="#graphic">Graphic</a></li>
                 <li id="branding_nav" onclick="clickCategory(this.id)"><a href="#branding">Branding</a></li>
@@ -493,4 +494,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="../js/header.js"></script>
 <script type="text/javascript" src="../js/scroll_event.js"></script>
+<script type="text/javascript" src="../js/open_category.js"></script>
 </html>
