@@ -1,3 +1,6 @@
+document.addEventListener('touchmove',function(){
+	alert('mobile!');
+})
 //scroll 유도 화살표.
 function removeScrollArrow(){
 	const scroll_arrow = document.querySelector('#scroll_arrow');
@@ -83,14 +86,6 @@ function setScrollUnderline(){
 		scrollLoop();
 		removeScrollArrow();
 	})
-
-	$(".mobile").scroll(function(){
-		alert('mobile!');
-		yOffset = window.pageYOffset;
-		scrollLoop();
-		removeScrollArrow();
-	})
-
 	window.addEventListener('load',setLayout);
 	window.addEventListener('resize',setLayout);
 };
