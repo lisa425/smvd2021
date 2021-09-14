@@ -1,6 +1,3 @@
-document.addEventListener('touchmove',function(){
-	alert('mobile!');
-})
 //scroll 유도 화살표.
 function removeScrollArrow(){
 	const scroll_arrow = document.querySelector('#scroll_arrow');
