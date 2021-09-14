@@ -35,6 +35,7 @@ const openIntro = () => {
 //모바일에서 세로로 개요를 오픈
 const openMobileIntro = () => {
     let content_height = window.innerHeight - 205;
+    content.style.width = 100 + 'vw';
     console.log(content_height);
     window.addEventListener('resize',function(event){
         if(isOpen){
@@ -66,3 +67,11 @@ if(window.innerWidth < 1023){
 }else{
     openIntro();
 }
+
+window.addEventListener('resize',function(event){
+    if(window.innerWidth < 769){
+        openMobileIntro();
+    }else{
+        openIntro();
+    }
+})

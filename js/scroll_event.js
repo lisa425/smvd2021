@@ -1,15 +1,15 @@
-(()=>{
-	//scroll 유도 화살표.
-	function removeScrollArrow(){
-		const scroll_arrow = document.querySelector('#scroll_arrow');
-		scroll_arrow.classList.remove('scroll_arrow');
-	}
+//scroll 유도 화살표.
+function removeScrollArrow(){
+	const scroll_arrow = document.querySelector('#scroll_arrow');
+	scroll_arrow.classList.remove('scroll_arrow');
+}
 
+
+let yOffset = 0; //window.pageYOffset 역할
+let prevScrollHeight = 0; //현재 스크롤 위치보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
+let currentScene = 0; //현재 활성화된 씬(scroll section)
+function setScrollUnderline(){
 	//scroll에 따라 카테고리 밑줄 쳐지는 event
-    let yOffset = 0; //window.pageYOffset 역할
-	let prevScrollHeight = 0; //현재 스크롤 위치보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
-	let currentScene = 0; //현재 활성화된 씬(scroll section)
-
     const categoryInfo = [
         {
             container:document.querySelector('#graphic'),
@@ -76,6 +76,7 @@
 		document.body.setAttribute('id',`show-category-${currentScene}`);
 	}
 
+
 	window.addEventListener('resize',setLayout());
 	window.addEventListener('scroll',()=>{
 		yOffset = window.pageYOffset;
@@ -84,4 +85,40 @@
 	})
 	window.addEventListener('load',setLayout);
 	window.addEventListener('resize',setLayout);
-})();
+};
+
+//카테고리 버튼 클릭 시 현재 씬 변경
+function clickCategory(id){
+	switch(id){
+		case 'graphic_nav':
+			currentScene = 0;
+			document.body.setAttribute('id',`show-category-0`);
+			break;
+		case 'branding_nav':
+			currentScene = 1;
+			document.body.setAttribute('id',`show-category-1`);
+			break;
+		case 'editorial_nav':
+			currentScene = 2;
+			document.body.setAttribute('id',`show-category-2`);
+			break;
+		case 'uxui_nav':
+			currentScene = 3;
+			document.body.setAttribute('id',`show-category-3`);
+			break;
+		case 'game_nav':
+			currentScene = 4;
+			document.body.setAttribute('id',`show-category-4`);
+			break;
+		case 'motion_nav':
+			currentScene = 5;
+			document.body.setAttribute('id',`show-category-5`);
+			break;
+		case 'illustration_nav':
+			currentScene = 6;
+			document.body.setAttribute('id',`show-category-6`);
+			break;
+	}
+}
+
+setScrollUnderline();
