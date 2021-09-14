@@ -6,10 +6,6 @@ input:focus{
     outline: none;
     text-decoration: none;
 }
-form:focus{
-    border:none;
-    text-decoration: none;
-}
 .mobile{
     display: none;
 }
@@ -73,10 +69,7 @@ form:focus{
     border:none;
     padding:5px 0;
 }
-.list-search-input:focus{
-    outline: none;
-    border-bottom: 2px solid black;
-}
+
 .list-search-input::placeholder{
     color:rgba(0,0,0,0.6);
     font-size:2vw;
@@ -260,7 +253,37 @@ form:focus{
     }
     .list-item{
         width: calc(70vw/3.3);
+        height: auto;
+    }
+    .list-info{
+        position: relative;
+        opacity:1;
+        background-color: transparent;
+        width:100%;
+        height:auto;
+        margin:0;
+        padding:0;
+        color:black;
+        margin:5px 0 8px 0;
+   }
+    .list-info .title{
+        font-size:1.8vw;
+        margin:3px 0 0 0;
+    }
+    .list-info .std-name{
+        font-size:1.2vw;
+        margin:2px 0 0 0;
+    }
+    .list-thumbnail{
         height: calc(70vw/3.3);
+    }
+    .list-item:hover .list-info{
+        opacity: 1;
+        transition: none;
+    }
+    .list-item:hover img{
+        transition:none;
+        opacity:1;
     }
     #graphic{
         min-height: auto;
