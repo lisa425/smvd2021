@@ -121,4 +121,33 @@ function clickCategory(id){
 	}
 }
 
-setScrollUnderline();
+function removeClickCategory(){
+	const graphic_nav = document.querySelector('#graphic_nav');
+	const branding_nav = document.querySelector('#branding_nav');
+	const editorial_nav = document.querySelector('#editorial_nav');
+	const uxui_nav = document.querySelector('#uxui_nav');
+	const game_nav = document.querySelector('#game_nav');
+	const motion_nav = document.querySelector('#motion_nav');
+	const illustration_nav = document.querySelector('#illustration_nav');
+
+	graphic_nav.removeAttribute("onclick");
+	branding_nav.removeAttribute("onclick");
+	editorial_nav.removeAttribute("onclick");
+	uxui_nav.removeAttribute("onclick");
+	game_nav.removeAttribute("onclick");
+	motion_nav.removeAttribute("onclick");
+	illustration_nav.removeAttribute("onclick");
+}
+
+function checkDesktop(){
+	if(['Win16','Win32','Win64','Mac','MacIntel'].indexOf(navigator.platform)){
+		setScrollUnderline();
+	}else{
+		if(window.innerWidth < 481){
+			//모바일의 경우에만 스크롤 이벤트를 적용시키지 않는다.
+			removeClickCategory();
+		}
+	}
+}
+
+checkDesktop();
