@@ -139,15 +139,17 @@ function removeClickCategory(){
 	illustration_nav.removeAttribute("onclick");
 }
 
-function checkDesktop(){
-	if(['Win16','Win32','Win64','Mac','MacIntel'].indexOf(navigator.platform)){
-		setScrollUnderline();
-	}else{
-		if(window.innerWidth < 481){
-			//모바일의 경우에만 스크롤 이벤트를 적용시키지 않는다.
-			removeClickCategory();
-		}
-	}
-}
+setScrollUnderline();
 
-checkDesktop();
+// function checkDesktop(){
+// 	if(['Win16','Win32','Win64','Mac','MacIntel'].indexOf(navigator.platform)){
+// 		setScrollUnderline();
+// 	}else{
+// 		if(window.innerWidth < 481){
+// 			//모바일의 경우에만 스크롤 이벤트를 적용시키지 않는다.
+// 			removeClickCategory();
+// 		}
+// 	}
+// }
+
+// checkDesktop();
