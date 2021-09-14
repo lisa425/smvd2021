@@ -83,6 +83,14 @@ function setScrollUnderline(){
 		scrollLoop();
 		removeScrollArrow();
 	})
+
+	$(".mobile").scroll(function(){
+		alert('mobile!');
+		yOffset = window.pageYOffset;
+		scrollLoop();
+		removeScrollArrow();
+	})
+
 	window.addEventListener('load',setLayout);
 	window.addEventListener('resize',setLayout);
 };
