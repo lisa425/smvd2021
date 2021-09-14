@@ -46,8 +46,9 @@
     font-style:normal;
     font-weight:400;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    src:url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.eot");
-    src:url(
+    src: local('Neue Haas Grotesk Display Pro 55 Roman'), url('../assets/fonts/NeueHaasDisplayRoman.woff') format('woff');
+    /* src:url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.eot"); */
+    /* src:url(
         "//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.eot?#iefix"
     )format("embedded-opentype"),
     url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.woff2")format(
@@ -61,7 +62,7 @@
     ),
     url(
         "//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.svg#NHaasGroteskDSPro-55Rg"
-    )format("svg");
+    )format("svg"); */
 }
 
 @font-face {
@@ -89,7 +90,8 @@
     font-style:normal;
     font-weight:700;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    src:url("//db.onlinewebfonts.com/t/f21923cb0f60b46d41a66875255790b3.eot");
+    src: local('Neue Haas Grotesk Display Pro 65 Medium'), url('../assets/fonts/NeueHaasDisplayMediu.woff') format('woff');
+    /* src:url("//db.onlinewebfonts.com/t/f21923cb0f60b46d41a66875255790b3.eot");
     src:url(
         "//db.onlinewebfonts.com/t/f21923cb0f60b46d41a66875255790b3.eot?#iefix"
     )format("embedded-opentype"),
@@ -104,7 +106,7 @@
     ),
     url(
         "//db.onlinewebfonts.com/t/f21923cb0f60b46d41a66875255790b3.svg#NHaasGroteskDSPro-65Md"
-    )format("svg");
+    )format("svg"); */
 }
 
 
@@ -124,7 +126,8 @@
     font-style:normal;
     font-weight:900;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-    src:url("//db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
+    src: local('Neue Haas Grotesk Display Pro 75 Bold'), url('../assets/fonts/NeueHaasDisplayBold.woff') format('woff');
+    /* src:url("//db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot");
     src:url(
         "//db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.eot?#iefix"
     )format("embedded-opentype"),
@@ -139,7 +142,7 @@
     ),
     url(
         "//db.onlinewebfonts.com/t/0209bfe594ed24b75ee2aac06529e4f9.svg#NHaasGroteskDSPro-75Bd"
-    )format("svg");
+    )format("svg"); */
 }
 
 html,

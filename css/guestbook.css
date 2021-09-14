@@ -50,6 +50,7 @@ textarea:focus{
     padding-bottom: 4px;
     font-weight: 700;
     font-size: 17px;
+    width:12%;
     background:url('../assets/images/mobile_open_category.svg') no-repeat 95% 50%;
 }
 
@@ -124,6 +125,7 @@ textarea:focus{
     color:white;
     font-size: 16px;
     font-weight: 700;
+    width:69%;
     background:url('../assets/images/select_btn.svg') no-repeat 95% 50%;
 }
 .text-input{
