@@ -69,6 +69,9 @@ input:focus{
     border:none;
     padding:5px 0;
 }
+.list-search-input:focus{
+    border:none;
+}
 
 .list-search-input::placeholder{
     color:rgba(0,0,0,0.6);
