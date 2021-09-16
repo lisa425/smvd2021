@@ -121,7 +121,9 @@ function clickCategory(id){
 	}
 }
 
-function removeClickCategory(){
+function removeScrollEvent(){
+	document.body.removeAttribute('id',`show-category-0`);
+
 	const graphic_nav = document.querySelector('#graphic_nav');
 	const branding_nav = document.querySelector('#branding_nav');
 	const editorial_nav = document.querySelector('#editorial_nav');
@@ -157,7 +159,7 @@ function checkDesktop(){
 	if (isMobile) {
 		if(window.innerWidth < 481){
 			//모바일의 경우에만 스크롤 이벤트를 적용시키지 않는다.
-			removeClickCategory();
+			removeScrollEvent();
 		}else return;
 	} else {
 	setScrollUnderline();
