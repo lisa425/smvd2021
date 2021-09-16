@@ -5,6 +5,9 @@ select{
     cursor: pointer;
     padding-right: 25px;
 }
+option{
+    color:black;
+}
 input:focus{
     outline: none;
 }
@@ -26,8 +29,7 @@ textarea:focus{
     align-items: center;
 }
 .guestbook-wrapper{
-    padding-top:7vh;
-    /* width:70vw; */
+    padding-top:9vh;
     max-width: 1024px;
     margin:0 8vw;
     height:82vh;

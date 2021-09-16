@@ -168,15 +168,18 @@
 
 .exhibition-overview{
     width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .overview-text{
-    padding-left:80px;
-    width:calc(100% - 80px);
+    padding-left:58px;
+    width:calc(100% - 116px);
     margin-top:40px;
     margin-bottom: 40px;
     font-weight: 400;
 }
-.overview-text p:nth-child(2) br{
+.overview-text p .mobile-br{
     display: none;
 }
 .overview-text p{
@@ -193,8 +196,8 @@
     align-items: center;
 }
 .exhibition-credit .credit-list{
-    width:calc(100% - 80px);
-    padding-left:80px;
+    width:calc(100% - 116px);
+    padding-left:58px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -224,20 +227,20 @@
     margin:41px 0 76px 0;
 }
 .credit-list div{
-    margin-bottom:30px;
-    line-height: 25px;
+    margin-bottom:30px; 
     font-size:18px;
 }
 .credit-list p{
     font-weight: 400;
+    line-height: 1.7em;
 }
 .credit-list .credit-kr h3{
     font-weight:700;
-    margin:3px 0;
+    margin:10px 0;
 }
 .credit-list .credit-en h3{
     font-weight:700;
-    margin:3px 0;
+    margin:10px 0;
 }
 
 
@@ -416,16 +419,16 @@
         width:100%;
         margin-bottom:25px;
     }
-    .overview-text p:nth-child(2) br{
+    .overview-text p .mobile-br{
         display: block;
     }
     .overview-text p{
-        text-align: justify;
         font-size:15px;
         line-height: 25px;
         width:100%;
         margin-bottom: 15px;
     }
+
     .exhibition-credit a{
         width:100%;
     }

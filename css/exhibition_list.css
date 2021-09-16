@@ -38,8 +38,7 @@ input:focus{
     top:30px;
 }
 .art-category{
-    position: absolute;
-    top:12vw;
+    margin-top:6vw;
     font-size: 2.3vw;
     font-weight: 700;
 }
@@ -51,11 +50,12 @@ input:focus{
     color: black;
 }
 #list-search-li{
-    margin-top:25vh;
+    margin-top:20vh;
+    width:100%;
 }
 .list-search{
     position: relative;
-    width:55%;
+    width:60%;
     height: 3vw;
     border-bottom: 2px solid black;
 }
@@ -229,11 +229,12 @@ input:focus{
 
 @media screen and (max-width:1023px) and (min-width:481px){
     .category{
-        padding:7.5vh 0 6.6vh 3vw;
+        padding:7.5vh 0 6.6vh 4vw;
         justify-content: flex-start;
     }
     .art-category{
         font-size:3vw;
+        margin-top:5vw;
     }
     .list-search{
         width:65%;
