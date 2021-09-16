@@ -100,17 +100,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    max-width:881px;
+    /* max-width:881px; */
+    max-width:980px;
     margin:5vh 0;
 }
 
 .exhibition-introduction .intro-wrapper hr{
-    width:100%;
+    width:90%;
     margin-bottom:32px;
 }
 
 .school-navigation{
-    width:100%;
+    width:90%;
     display: flex;
     justify-content: space-between;
 }
@@ -145,7 +146,8 @@
     line-height: 32px;
     font-size: 25px;
     font-weight: 400;
-    width:613px;
+    max-width: 613px;
+    min-width: 550px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -165,11 +167,11 @@
 }
 
 .exhibition-overview{
-    width:100%;
+    width:90%;
 }
 .overview-text{
-    padding-left:64px;
-    width:calc(100% - 64px);
+    padding-left:80px;
+    width:calc(100% - 80px);
     margin-top:40px;
     margin-bottom: 40px;
     font-weight: 400;
@@ -185,20 +187,23 @@
 
 
 .exhibition-credit{
-    width:100%;
+    width:90%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .exhibition-credit .credit-list{
-    width:calc(100% - 64px);
-    padding-left:64px;
+    width:calc(100% - 80px);
+    padding-left:80px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+.exhibition-credit .credit-list .credit-kr .committee p{
+    margin-right:20px;
+}
 .exhibition-credit .entry-btn{
-    width:722px;
+    width:100%;
     height:71px;
     font-weight:700;
     font-size:28px;
@@ -210,6 +215,10 @@
 }
 .exhibition-credit .entry-btn:hover{
     background:#FF6632;
+}
+.exhibition-credit > a{
+    width:90%;
+    display: block;
 }
 .credit-list{
     margin:41px 0 76px 0;

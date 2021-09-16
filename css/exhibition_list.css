@@ -50,7 +50,7 @@ input:focus{
     color: black;
 }
 #list-search-li{
-    margin-top:30vh;
+    margin-top:25vh;
 }
 .list-search{
     position: relative;
@@ -168,9 +168,9 @@ input:focus{
 .gray-back{
     background-color: #BFBFBF;
 }
-#graphic{
+/* #graphic{
     min-height: calc(100vh - 35px);
-}
+} */
 
 #show-category-0 #graphic_nav,
 #show-category-1 #branding_nav,
@@ -188,8 +188,8 @@ input:focus{
     position: fixed;
     right:40px;
     bottom:30px;
-    width:135px;
-    height: 135px;
+    width:115px;
+    height: 115px;
     background-color: transparent;
     color:white;
     font-size: 1em;
@@ -199,16 +199,10 @@ input:focus{
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.guestbook-btn:hover{
-    transform: rotate(5deg);
-    transition: 0.3s ease-out;
-    width:140px;
-    height: 140px;
-}
 .guestbook-btn p{
     position: absolute;
-    left: 20%;
-    top:31%;
+    left: 15px;
+    top:34px;
 }
 
 @keyframes arrow_animation{
@@ -294,6 +288,17 @@ input:focus{
     #list-search-li{
         margin-top:0;
     }
+    .guestbook-btn{
+       width:80px;
+       height:80px;
+       font-size:11px;
+       right:20px;
+       bottom:15px;
+   }
+   .guestbook-btn p{
+       left:11px;
+       top:23px;
+   }
 
 }
 
@@ -455,15 +460,10 @@ input:focus{
        bottom:10px;
    }
    .guestbook-btn p{
-       left:13%;
-       top:29%;
+       left:11px;
+       top:23px;
    }
-   .guestbook-btn:hover{
-        transform: rotate(5deg);
-        transition: 0.3s ease-out;
-        width:90px;
-        height: 90px;
-    }
+   
     #scroll_arrow{
         display: none !important;
     }
