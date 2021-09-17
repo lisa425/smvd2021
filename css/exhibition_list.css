@@ -230,13 +230,18 @@ input:focus{
     animation: arrow_animation 2s ease-out infinite; 
 }
 
-
+@media screen and (max-width:1280px) and (min-width:1024px){
+    .art-category{
+        top:12vw;
+    }
+}
 @media screen and (max-width:1023px) and (min-width:481px){
     .category{
         padding:0 0 0 3vw;
     }
     .art-category{
         font-size:3vw;
+        top:11.5vw;
     }
     .list-search{
         width:65%;
