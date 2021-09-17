@@ -156,17 +156,19 @@
     }
     .artwork-contents .artwork-info {
         width:auto;
-        max-width:50%;
+        max-width:48%;
     }
     .artwork-contents .artwork-info .title{
         font-size: 5.5vw;
+        position: relative;
+        top: -3px;
     }
     .artwork-contents .artwork-info .artwork-category{
         font-size: 3vw;
         margin-top:15px;
     }
     .artwork-contents .student-info{
-        width:auto;
+        width:50%;
         max-width:50%;
     }
     .artwork-contents .student-info .student-item .name{

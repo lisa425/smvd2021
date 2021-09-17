@@ -155,7 +155,7 @@ input:focus{
     white-space: pre-wrap;
     overflow: hidden;
     line-height: 1.5em;
-    font-size:1.5em;
+    font-size:1.4rem;
     font-weight: 700;
 }
 .list-info .std-name{
@@ -394,7 +394,7 @@ input:focus{
    .list-search{
        grid-column: 2;
        grid-row:4;
-       width:100%;
+       width:90%;
        height:70%;
    }
    .list-search-input{

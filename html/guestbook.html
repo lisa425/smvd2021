@@ -21,8 +21,10 @@
                 </span>
         </div>
         <div class="part">
-            <!-- back 버튼 클릭 시 홈페이지 url로 넘어가야 합니다. 현재는 index.html 파일로만 넘겨주고 있습니다.-->
-            <button class="back-btn"><a href="./exhibition_list.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a></button>
+            <!-- back 버튼 클릭 시 list url로 넘어가야 합니다. 현재는 exhibition_list.html 파일로만 넘겨주고 있습니다.-->
+            <button class="back-btn">
+                <a href="./exhibition_list.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a>
+            </button>
             <h1 class="menu-title">Guestbook</h1>
         </div>
     </header>
@@ -31,6 +33,7 @@
             <!-- 학생을 필터링/검색하는 영역 -->
             <section class="search-std">
                 <select name="filter_name">
+                    <!-- option에 등록해둔 학생 명단을 출력 -->
                     <option>모두</option>
                     <option>김하열음</option>
                     <option>임채원</option>
@@ -58,71 +61,24 @@
                     </div>
                     <p class="message">블라블라 세상에서 제일가는 포테이토칩</p>
                 </article>
-
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">블라블라 세상에서제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩</p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">블라블라 세상에서 제일가는 포테이토칩</p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">얘들아 수고했고 10년뒤에 보자, </p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩블라블라 세상에서 제일가는 포테이토칩</p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">방명록을 남겼습니다 방명록 내용입니다.</p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">수고했다~~~</p>
-                </article>
-                <article class="guestbook-item">
-                    <div class="message-info">
-                        <span class="std-name">To. 임채원</span>
-                        <span class="created-at">2021-10-04</span>
-                    </div>
-                    <p class="message">블라블라 세상에서 제일가는 포테이토칩</p>
-                </article>
             </section>
+
             <!-- 방명록을 작성하는 영역 -->
             <section class="guestbook-create">
                 <form class="guestbook-create-form">
                     <div class="create-select">
                     To.&nbsp;&nbsp;
-                        <!-- 등록된 학생명을 option으로 출력 -->
                         <select name="select_name">
+                            <!-- option에 등록해둔 학생 명단을 출력 -->
                             <option>모두</option>
                             <option>김하열음</option>
                             <option>임채원</option>
                             <option>Sonia Lee</option>
                         </select>
                     </div>
+                    <!-- 내용을 작성하는 칸 -->
                     <textarea class="text-input" maxLength='300' placeholder="방명록을 300자 이내로 작성해주세요."></textarea>
+                    <!-- 제출 버튼 -->
                     <button type="submit" class="submit-guestbook">
                         <svg
                             width="37"

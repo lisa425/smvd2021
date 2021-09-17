@@ -22,11 +22,16 @@
         </div>
         <div class="part">
             <!-- back 버튼 클릭 시 홈페이지 url로 넘어가야 합니다. 현재는 index.html 파일로만 넘겨주고 있습니다.-->
-            <button class="back-btn"><a href="../index.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a></button>
+            <button class="back-btn">
+                <a href="../index.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a>
+            </button>
             <h1 class="menu-title">Exhibition</h1>
-            <button class="mobile nav-open-btn" onclick="openCategory()"><img src="../assets/images/mobile_open_category.svg" alt="카테고리"></button>
+            <button class="mobile nav-open-btn" onclick="openCategory()">
+                <img src="../assets/images/mobile_open_category.svg" alt="카테고리">
+            </button>
         </div>
     </header>
+
     <main class="exhibition">
         <nav class="category" id="category">
             <ul class="art-category" id="art_category">
@@ -38,6 +43,7 @@
                 <li id="motion_nav" onclick="clickCategory(this.id)"><a href="#motion">Motion</a></li>
                 <li id="illustration_nav" onclick="clickCategory(this.id)"><a href="#illustration">Illustration</a></li>
                 <li id="list-search-li">
+                    <!-- 작품 검색창 -->
                     <form action="" id="list-search-form" class="list-search">
                         <input class="list-search-input" type="text" placeholder="Search"/>
                         <button class="list-search-submit" type="submit"><img src="../assets/images/search_btn.svg" alt="search button"></button> 
@@ -48,231 +54,63 @@
 
         <!-- 전시물 리스트가 들어갑니다.-->
         <section class="exhibition-list">
+            <!-- 카테고리-'graphic'으로 등록된 작품 리스트 -->
             <article id="graphic" class="orange-back artworks">
                 <div class="list-wrapper">
                     <!-- list-item: 개별 작품-->
                     <div class="list-item">
                         <!-- a: 각 작품의 디테일 페이지로 이동하는 url이 들어가면 됩니다. -->
                         <a href="./exhibition_detail.html">
-                            <!-- list-thumnail: 이미지 썸네일이 들어갑니다. -->
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <!-- list-thumnail: 등록한 이미지 썸네일이 들어갑니다. -->
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <!-- list-info: 각 작품의 정보, 제목, 학생명이 들어갑니다.-->
                             <div class="list-info">
+                                <!-- 제목 -->
                                 <h2 class="title">요상한 독일어 단어집</h2>
+                                <!-- 학생명 -->
                                 <span class="std-name">김민주</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">a Little Bit!</h2>
-                                <span class="std-name">임채원,이세림,장민주</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">Roady</h2>
-                                <span class="std-name">구자영</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
                             </div>
                         </a>
                     </div>
                 </div>
             </article>
+
+            <!-- 카테고리 'branding'으로 등록된 작품 리스트 -->
             <article id="branding" class="white-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">요상한 독일어 사전</h2>
                                 <span class="std-name">김민주</span>
                             </div>
                         </a>
                     </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </article>
+
+            <!-- 카테고리 'editorial'으로 등록된 작품 리스트 -->
             <article id="editorial" class="gray-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">블라블라 블라블라</h2>
                                 <span class="std-name">Sonia Lee</span>
                             </div>
                         </a>
                     </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
+                </div>
             </article>
+
+            <!-- 카테고리 'uxui'으로 등록된 작품 리스트 -->
             <article id="uxui" class="orange-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                        <div class="list-info">
-                            <h2 class="title">요상한 독일어 단어집</h2>
-                            <span class="std-name">임채원,장민주,이세림</span>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">블라블라 블라블라</h2>
                                 <span class="std-name">Sonia Lee</span>
@@ -281,29 +119,13 @@
                     </div>
                 </div>
             </article>
+
+            <!-- 카테고리 'game'으로 등록된 작품 리스트 -->
             <article id="game" class="white-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">블라블라 블라블라</h2>
                                 <span class="std-name">Sonia Lee</span>
@@ -312,47 +134,13 @@
                     </div>
                 </div>
             </article>
+
+            <!-- 카테고리 'motion'으로 등록된 작품 리스트 -->
             <article id="motion" class="gray-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">블라블라 블라블라</h2>
                                 <span class="std-name">Sonia Lee</span>
@@ -361,119 +149,13 @@
                     </div>
                 </div>
             </article>
+
+            <!-- 카테고리 'illustration'으로 등록된 작품 리스트 -->
             <article id="illustration" class="orange-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/005.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
                             <div class="list-info">
                                 <h2 class="title">블라블라 블라블라</h2>
                                 <span class="std-name">Sonia Lee</span>
