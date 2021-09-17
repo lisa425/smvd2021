@@ -4,13 +4,11 @@ function removeScrollArrow(){
 	scroll_arrow.classList.remove('scroll_arrow');
 }
 
-
+//scroll에 따라 카테고리 밑줄 쳐지는 event
 let yOffset = 0; //window.pageYOffset 역할
 let prevScrollHeight = 0; //현재 스크롤 위치보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
 let currentScene = 0; //현재 활성화된 씬(scroll section)
 function setScrollUnderline(){
-	console.log('set underline')
-	//scroll에 따라 카테고리 밑줄 쳐지는 event
     const categoryInfo = [
         {
             container:document.querySelector('#graphic'),
@@ -123,7 +121,6 @@ function clickCategory(id){
 }
 
 function removeScrollEvent(){
-	console.log('remove scroll')
 	document.body.removeAttribute('id',`show-category-0`);
 
 	const graphic_nav = document.querySelector('#graphic_nav');
@@ -144,7 +141,6 @@ function removeScrollEvent(){
 }
 
 function detectMobileDevice(agent) {
-  console.log(agent)
   const mobileRegex = [
     /Android/i,
     /iPhone/i,

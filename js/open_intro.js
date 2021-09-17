@@ -1,3 +1,4 @@
+//홈 화면에서 박스 여는 효과
 const label = document.getElementById('label'); //주황색 label
 const content = document.getElementById('content'); //전시 개요 내용
 const arrow = document.getElementById('entry-arrow'); //label 하단 화살표

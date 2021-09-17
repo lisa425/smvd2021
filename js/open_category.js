@@ -1,3 +1,4 @@
+//mobile:카테고리 리스트 open/close 인터랙션
 let isCategoryOpen = false;
 function openCategory(){
     const category = document.querySelector('#category');

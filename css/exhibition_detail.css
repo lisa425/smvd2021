@@ -168,7 +168,7 @@
         margin-top:15px;
     }
     .artwork-contents .student-info{
-        width:50%;
+        width:auto;
         max-width:50%;
     }
     .artwork-contents .student-info .student-item .name{

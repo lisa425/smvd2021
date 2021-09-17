@@ -1,3 +1,4 @@
+//헤더 로테이션 모션
 Zepto(function($) {
   $(window).on('load', function() {
     $.each($(".ezkorry-roller"), function(index, item) {
