@@ -34,13 +34,13 @@ const openIntro = () => {
 
 //모바일에서 세로로 개요를 오픈
 const openMobileIntro = () => {
-    let content_height = window.innerHeight - 205;
+    let content_height = window.innerHeight - 200;
     content.style.width = 100 + 'vw';
     console.log(content_height);
     window.addEventListener('resize',function(event){
         if(isIntroOpen){
             //개요 창이 열려있는 경우, 박스 안의 컨텐츠 너비를 창이 resize 될 때 마다 조절한다.
-            content_height = window.innerHeight - 205;
+            content_height = window.innerHeight - 200;
             content.style.height = content_height+'px';
         }
     },true);
