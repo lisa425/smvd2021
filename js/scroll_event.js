@@ -155,11 +155,10 @@ function detectMobileDevice(agent) {
   return mobileRegex.some(mobile => agent.match(mobile))
 }
 const isMobile = detectMobileDevice(window.navigator.userAgent);
-if (isMobile) {
-	if(window.innerWidth < 481){
-		//모바일의 경우에만 스크롤 이벤트를 적용시키지 않는다.
-		removeScrollEvent();
-	}else return;
+if (isMobile && window.innerWidth < 481) {
+	console.log('mobile!');
+	removeScrollEvent();
 } else {
+	console.log('web!');
 	setScrollUnderline();
 }
