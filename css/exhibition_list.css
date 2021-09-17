@@ -38,12 +38,11 @@ input:focus{
     top:30px;
 }
 .art-category{
-    /* margin-top:7vw; */
     font-size: 2.3vw;
     font-weight: 700;
     position: relative;
-    top:11.7vw;
-    height:68%;
+    top:11vw;
+    height:70%;
 }
 .art-category li{
     margin: 0.8vw 0.3vw;
