@@ -9,6 +9,7 @@ let yOffset = 0; //window.pageYOffset 역할
 let prevScrollHeight = 0; //현재 스크롤 위치보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
 let currentScene = 0; //현재 활성화된 씬(scroll section)
 function setScrollUnderline(){
+	console.log('set underline')
 	//scroll에 따라 카테고리 밑줄 쳐지는 event
     const categoryInfo = [
         {
@@ -122,6 +123,7 @@ function clickCategory(id){
 }
 
 function removeScrollEvent(){
+	console.log('remove scroll')
 	document.body.removeAttribute('id',`show-category-0`);
 
 	const graphic_nav = document.querySelector('#graphic_nav');
@@ -141,28 +143,23 @@ function removeScrollEvent(){
 	illustration_nav.removeAttribute("onclick");
 }
 
-setScrollUnderline();
+function detectMobileDevice(agent) {
+  console.log(agent)
+  const mobileRegex = [
+    /Android/i,
+    /iPhone/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+  ]
+  return mobileRegex.some(mobile => agent.match(mobile))
+}
 
-// function detectMobileDevice(agent) {
-//   const mobileRegex = [
-//     /Android/i,
-//     /iPhone/i,
-//     /iPad/i,
-//     /iPod/i,
-//     /BlackBerry/i,
-//     /Windows Phone/i
-//   ]
-//   return mobileRegex.some(mobile => agent.match(mobile))
-// }
-// const isMobile = detectMobileDevice(window.navigator.userAgent);
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
-if (isMobile && window.innerWidth < 481) {
-	console.log('mobile!');
-	console.log(isMobile);
+//모바일이면 스크롤 이벤트를 제거, 웹이나 탭이면 스크롤 이벤트 활성화
+const isMobile = detectMobileDevice(window.navigator.userAgent);
+if (isMobile || window.innerWidth < 481) {
 	removeScrollEvent();
 } else {
-	console.log(isMobile);
-	console.log('web!');
 	setScrollUnderline();
 }

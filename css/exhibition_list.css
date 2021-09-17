@@ -38,7 +38,7 @@ input:focus{
     top:30px;
 }
 .art-category{
-    margin-top:6vw;
+    margin-top:7vw;
     font-size: 2.3vw;
     font-weight: 700;
 }
@@ -50,7 +50,7 @@ input:focus{
     color: black;
 }
 #list-search-li{
-    margin-top:20vh;
+    margin-top:22vh;
     width:100%;
 }
 .list-search{
@@ -239,7 +239,7 @@ input:focus{
     .list-search{
         width:65%;
         height:4vw;
-        margin-top:45px;
+        margin-top:5vw;
     }
     .list-search-input{
         font-size:2.5vw;
