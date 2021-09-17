@@ -143,22 +143,26 @@ function removeScrollEvent(){
 
 setScrollUnderline();
 
-function detectMobileDevice(agent) {
-  const mobileRegex = [
-    /Android/i,
-    /iPhone/i,
-    /iPad/i,
-    /iPod/i,
-    /BlackBerry/i,
-    /Windows Phone/i
-  ]
-  return mobileRegex.some(mobile => agent.match(mobile))
-}
-const isMobile = detectMobileDevice(window.navigator.userAgent);
+// function detectMobileDevice(agent) {
+//   const mobileRegex = [
+//     /Android/i,
+//     /iPhone/i,
+//     /iPad/i,
+//     /iPod/i,
+//     /BlackBerry/i,
+//     /Windows Phone/i
+//   ]
+//   return mobileRegex.some(mobile => agent.match(mobile))
+// }
+// const isMobile = detectMobileDevice(window.navigator.userAgent);
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
 if (isMobile && window.innerWidth < 481) {
 	console.log('mobile!');
+	console.log(isMobile);
 	removeScrollEvent();
 } else {
+	console.log(isMobile);
 	console.log('web!');
 	setScrollUnderline();
 }
