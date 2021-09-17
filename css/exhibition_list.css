@@ -398,8 +398,8 @@ input:focus{
        padding: 0;
    }
    .list-search-submit img{
-       height:90%;
-       width:90%;
+       height:100%;
+       width:93%;
    }
    
    .exhibition{
