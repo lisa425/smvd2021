@@ -352,7 +352,8 @@ input:focus{
        grid-template-columns: 27vw 27vw;
        grid-template-rows: 4vh 4vh 4vh 4vh;
        column-gap: 12vw;
-       margin-top:6vw;
+       position: static;
+       top:auto;
    }
    .art-category li{
        margin:0;
@@ -387,6 +388,8 @@ input:focus{
    }
     #list-search-li{
         margin-top:0;
+        position: static;
+        bottom: auto;
     } 
    .list-search{
        grid-column: 2;
