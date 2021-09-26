@@ -173,16 +173,13 @@ input:focus{
 .gray-back{
     background-color: #BFBFBF;
 }
-/* #graphic{
-    min-height: calc(100vh - 35px);
-} */
 
-#show-category-0 #graphic_nav,
-#show-category-1 #branding_nav,
-#show-category-2 #editorial_nav,
-#show-category-3 #uxui_nav,
-#show-category-4 #game_nav,
-#show-category-5 #motion_nav,
+#show-category-0 #branding_nav,
+#show-category-1 #editorial_nav,
+#show-category-2 #uxui_nav,
+#show-category-3 #motion_nav,
+#show-category-4 #graphic_nav,
+#show-category-5 #game_nav,
 #show-category-6 #illustration_nav{
     text-decoration: underline;
     padding-bottom: 3px;
@@ -272,6 +269,10 @@ input:focus{
         margin:5px 0 8px 0;
    }
     .list-info .title{
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
         font-size:1.8vw;
         margin:3px 0 0 0;
     }
@@ -454,8 +455,12 @@ input:focus{
         margin:5px 0 15px 0;
    }
    .list-info .title{
-       font-size:14px;
-       margin:0;
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        font-size:14px;
+        margin:0;
    }
    .list-info .std-name{
        font-size:12px;

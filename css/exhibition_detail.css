@@ -57,12 +57,13 @@
 
 .artwork-images{
     width:100%;
-    margin-top:5vh;
+    margin-top:90px;
 }
-
+/*변경!*/
 .artwork-images *{
     width:100%;
     margin:0;
+    display: block;
 }
 
 .artwork-images .video{
@@ -178,7 +179,7 @@
         font-size: 3vw;
     }
     .artwork-contents .artwork-text{
-        margin-top:22px;
+        margin-top:30px;
         font-size: 14px;
         width:100%;
     }

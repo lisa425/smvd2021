@@ -35,12 +35,12 @@
     <main class="exhibition">
         <nav class="category" id="category">
             <ul class="art-category" id="art_category">
-                <li id="graphic_nav" onclick="clickCategory(this.id)"><a href="#graphic">Graphic</a></li>
                 <li id="branding_nav" onclick="clickCategory(this.id)"><a href="#branding">Branding</a></li>
                 <li id="editorial_nav" onclick="clickCategory(this.id)"><a href="#editorial">Editorial</a></li>
                 <li id="uxui_nav" onclick="clickCategory(this.id)"><a href="#uxui">UX/UI</a></li>
-                <li id="game_nav" onclick="clickCategory(this.id)"><a href="#game">Game</a></li>
                 <li id="motion_nav" onclick="clickCategory(this.id)"><a href="#motion">Motion</a></li>
+                <li id="graphic_nav" onclick="clickCategory(this.id)"><a href="#graphic">Graphic</a></li>
+                <li id="game_nav" onclick="clickCategory(this.id)"><a href="#game">Game</a></li>
                 <li id="illustration_nav" onclick="clickCategory(this.id)"><a href="#illustration">Illustration</a></li>
                 <li id="list-search-li">
                     <!-- 작품 검색창 -->
@@ -54,15 +54,414 @@
 
         <!-- 전시물 리스트가 들어갑니다.-->
         <section class="exhibition-list">
+
+            <!-- 카테고리 'branding'으로 등록된 작품 리스트 -->
+            <article id="branding" class="orange-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/02_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">VobaVoba forest</h2>
+                                <span class="std-name">강수연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/14_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">PPOMO</h2>
+                                <span class="std-name">김지원</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/20_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Midnight Tale</h2>
+                                <span class="std-name">방현지</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/19_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">스틱스 저니</h2>
+                                <span class="std-name">박주연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/17_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">珠(주)</h2>
+                                <span class="std-name">Sonia Lee</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/26_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">閃光; 비연속적인 기억의 회상</h2>
+                                <span class="std-name">안서현</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/31_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">WAMO</h2>
+                                <span class="std-name">이가영</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/32_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Hug more</h2>
+                                <span class="std-name">이다경</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/33_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">EYE FINE</h2>
+                                <span class="std-name">이다은</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/39_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">asteriker</h2>
+                                <span class="std-name">이해인</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/40_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">MAUM NOCKUM(마음 녹음)</h2>
+                                <span class="std-name">이혜원</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/42_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">wallow wallow</h2>
+                                <span class="std-name">임현진</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/44_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">unrealistic aespa-funk</h2>
+                                <span class="std-name">정소이</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/46_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">뮤지컬 어쩌면 해피엔딩 (Redesign)</h2>
+                                <span class="std-name">채규희</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/47_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">키키프렌즈</h2>
+                                <span class="std-name">천예은</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/48_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Every day:ON AIR</h2>
+                                <span class="std-name">최아름</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/51_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">보이저레코즈</h2>
+                                <span class="std-name">추유림</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/55_thumbnail.png" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">현현책방</h2>
+                                <span class="std-name">현혜정,이정현</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'editorial'으로 등록된 작품 리스트 -->
+            <article id="editorial" class="gray-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/09_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">요상한 독일어</h2>
+                                <span class="std-name">김민주</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/35_thumnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Nostalasion24</h2>
+                                <span class="std-name">이수인</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/52_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">행불 사전</h2>
+                                <span class="std-name">한다현</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/53_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">28³ FACES 21952 EMOTIONS</h2>
+                                <span class="std-name">한승빈</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'uxui'으로 등록된 작품 리스트 -->
+            <article id="uxui" class="white-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/03_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Roady</h2>
+                                <span class="std-name">구자영</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/04_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Ko-Ling</h2>
+                                <span class="std-name">김하열음,권리원</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/05_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Paycle</h2>
+                                <span class="std-name">권지엽</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/13_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Salon</h2>
+                                <span class="std-name">김은수</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/11_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Plan:it</h2>
+                                <span class="std-name">김수연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/18_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">웨잇팅</h2>
+                                <span class="std-name">박연서</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/23_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">스쿱</h2>
+                                <span class="std-name">송여빈,정희진</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/28_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Nadri</h2>
+                                <span class="std-name">오영은</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/30_ thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Drawy</h2>
+                                <span class="std-name">윤혜원</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/37_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">휴식알람</h2>
+                                <span class="std-name">이정아</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/38_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">DeliverTalk</h2>
+                                <span class="std-name">이지수</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/43_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">a Little bit!</h2>
+                                <span class="std-name">이세림,임채원,장민주</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/45_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Replog</h2>
+                                <span class="std-name">주미연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/49_thumbnail.jpg.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">스피-킹</h2>
+                                <span class="std-name">최현진</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/50_thumbnail.png" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Today Body</h2>
+                                <span class="std-name">최효영</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/57_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Havit</h2>
+                                <span class="std-name">도예원</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- 카테고리 'motion'으로 등록된 작품 리스트 -->
+            <article id="motion" class="orange-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/22_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">티퍼티 time per tea, tea per time</h2>
+                                <span class="std-name">선민경</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/15_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">시도: But Let's Try Anyway</h2>
+                                <span class="std-name">김지인</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
             <!-- 카테고리-'graphic'으로 등록된 작품 리스트 -->
-            <article id="graphic" class="orange-back artworks">
+            <article id="graphic" class="gray-back artworks">
                 <div class="list-wrapper">
                     <!-- list-item: 개별 작품-->
                     <div class="list-item">
                         <!-- a: 각 작품의 디테일 페이지로 이동하는 url이 들어가면 됩니다. -->
                         <a href="./exhibition_detail.html">
                             <!-- list-thumnail: 등록한 이미지 썸네일이 들어갑니다. -->
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/16_thumbnail.jpg" alt="artwork image"/>
+                            <!-- list-info: 각 작품의 정보, 제목, 학생명이 들어갑니다.-->
+                            <div class="list-info">
+                                <!-- 제목 -->
+                                <h2 class="title">요상한 독일어 단어집</h2>
+                                <!-- 학생명 -->
+                                <span class="std-name">김민주</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <!-- a: 각 작품의 디테일 페이지로 이동하는 url이 들어가면 됩니다. -->
+                        <a href="./exhibition_detail.html">
+                            <!-- list-thumnail: 등록한 이미지 썸네일이 들어갑니다. -->
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/21_thumbnail.jpg" alt="artwork image"/>
                             <!-- list-info: 각 작품의 정보, 제목, 학생명이 들어갑니다.-->
                             <div class="list-info">
                                 <!-- 제목 -->
@@ -75,75 +474,42 @@
                 </div>
             </article>
 
-            <!-- 카테고리 'branding'으로 등록된 작품 리스트 -->
-            <article id="branding" class="white-back artworks">
-                <div class="list-wrapper">
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">요상한 독일어 사전</h2>
-                                <span class="std-name">김민주</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 카테고리 'editorial'으로 등록된 작품 리스트 -->
-            <article id="editorial" class="gray-back artworks">
-                <div class="list-wrapper">
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 카테고리 'uxui'으로 등록된 작품 리스트 -->
-            <article id="uxui" class="orange-back artworks">
-                <div class="list-wrapper">
-                    <div class="list-item">
-                        <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
-                            <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
             <!-- 카테고리 'game'으로 등록된 작품 리스트 -->
             <article id="game" class="white-back artworks">
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/06_thumbnail.jpg" alt="artwork image"/>
                             <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
+                                <h2 class="title">Bloom</h2>
+                                <span class="std-name">김가영</span>
                             </div>
                         </a>
                     </div>
-                </div>
-            </article>
-
-            <!-- 카테고리 'motion'으로 등록된 작품 리스트 -->
-            <article id="motion" class="gray-back artworks">
-                <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/25_thumbnail.jpg" alt="artwork image"/>
                             <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
+                                <h2 class="title">뽀물팜</h2>
+                                <span class="std-name">신효경</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/29_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">A Part</h2>
+                                <span class="std-name">윤수인</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/36_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">DOROTHY</h2>
+                                <span class="std-name">이신영</span>
                             </div>
                         </a>
                     </div>
@@ -155,10 +521,64 @@
                 <div class="list-wrapper">
                     <div class="list-item">
                         <a href="./exhibition_detail.html">
-                            <img class="list-thumbnail" src="../assets/images/example_img.jpeg" alt="artwork image"/>
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/01_thumbnail.jpg" alt="artwork image"/>
                             <div class="list-info">
-                                <h2 class="title">블라블라 블라블라</h2>
-                                <span class="std-name">Sonia Lee</span>
+                                <h2 class="title">Ready &amp; Leaf</h2>
+                                <span class="std-name">강경지</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/07_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">터덜터덜 친구들</h2>
+                                <span class="std-name">김기슬,송윤영</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/08_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">어둠이니까…</h2>
+                                <span class="std-name">김민아</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/12_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">옴뇸뇸 친구들</h2>
+                                <span class="std-name">김윤아</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/27_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">SHAPE OF KOREA</h2>
+                                <span class="std-name">안윤금</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/41_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">TOPPING</h2>
+                                <span class="std-name">이세연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/56_thumbnail.jpeg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Somnium</h2>
+                                <span class="std-name">홍성혜</span>
                             </div>
                         </a>
                     </div>

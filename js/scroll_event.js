@@ -9,11 +9,8 @@ let yOffset = 0; //window.pageYOffset 역할
 let prevScrollHeight = 0; //현재 스크롤 위치보다 이전에 위치한 스크롤 섹션들의 스크롤 높이값의 합
 let currentScene = 0; //현재 활성화된 씬(scroll section)
 function setScrollUnderline(){
+	//*********************변경*********************
     const categoryInfo = [
-        {
-            container:document.querySelector('#graphic'),
-            scrollHeight: 0
-        },
         {
             container:document.querySelector('#branding'),
             scrollHeight: 0
@@ -27,11 +24,15 @@ function setScrollUnderline(){
             scrollHeight: 0
         }, 
         {
-            container: document.querySelector('#game'),
+            container: document.querySelector('#motion'),
             scrollHeight: 0
         }, 
-        {
-            container: document.querySelector('#motion'),
+		{
+            container:document.querySelector('#graphic'),
+            scrollHeight: 0
+        },
+		{
+            container: document.querySelector('#game'),
             scrollHeight: 0
         }, 
         {
@@ -87,29 +88,30 @@ function setScrollUnderline(){
 };
 
 //카테고리 버튼 클릭 시 현재 씬 변경
+//*********************변경*********************
 function clickCategory(id){
 	switch(id){
-		case 'graphic_nav':
+		case 'branding_nav':
 			currentScene = 0;
 			document.body.setAttribute('id',`show-category-0`);
 			break;
-		case 'branding_nav':
+		case 'editorial_nav':
 			currentScene = 1;
 			document.body.setAttribute('id',`show-category-1`);
 			break;
-		case 'editorial_nav':
+		case 'uxui_nav':
 			currentScene = 2;
 			document.body.setAttribute('id',`show-category-2`);
 			break;
-		case 'uxui_nav':
+		case 'motion_nav':
 			currentScene = 3;
 			document.body.setAttribute('id',`show-category-3`);
 			break;
-		case 'game_nav':
+		case 'graphic_nav':
 			currentScene = 4;
 			document.body.setAttribute('id',`show-category-4`);
 			break;
-		case 'motion_nav':
+		case 'game_nav':
 			currentScene = 5;
 			document.body.setAttribute('id',`show-category-5`);
 			break;

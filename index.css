@@ -107,7 +107,7 @@
 
 .exhibition-introduction .intro-wrapper hr{
     width:90%;
-    margin-bottom:32px;
+    margin-bottom:45px;
 }
 
 .school-navigation{
@@ -143,7 +143,7 @@
 }
 .main-title .title-name{
     margin:76px 0;
-    line-height: 32px;
+    line-height: 1.3em;
     font-size: 25px;
     font-weight: 400;
     max-width: 613px;
@@ -157,10 +157,15 @@
     left:-15px;
 }
 
+.main-title .title-name .title-en{
+    position: relative;
+    left:68px;
+}
+
 .section-title{
     width:100%;
     font-size:28px;
-    font-weight:700;
+    font-weight:400;
 }
 .section-title span{
     margin-left:16px;
@@ -178,6 +183,9 @@
     margin-top:40px;
     margin-bottom: 40px;
     font-weight: 400;
+}
+.overview-text-en{
+    margin-bottom: 80px;
 }
 .overview-text p .mobile-br{
     display: none;
@@ -253,7 +261,7 @@
 .license p{
     font-weight: 400;
     font-size:0.65em;
-    margin:0.5em;
+    margin:0.1em;
     text-align: center;
     line-height: 1.5em;
 }
@@ -434,6 +442,9 @@
         width:100%;
         margin:40px 0 25px 0;
     }
+    .exhibition-credit .credit-list .credit-kr .committee p{
+        width:100%;
+    }
     .credit-list section{
         width:45%;
     }
@@ -480,6 +491,10 @@
         position: relative;
         left:-2vw;
     }
+    .license-hr{
+    margin-bottom: 25px !important;
+}
+
 }
 
 @media screen and (max-width:320px){
