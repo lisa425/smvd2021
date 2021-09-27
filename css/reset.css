@@ -28,6 +28,13 @@
     url( //fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
 	url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
 }
+@font-face {
+    font-family:'Noto Sans KR';
+    font-style:normal;
+    font-weight:300;
+	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+    src: local('Neue Haas Grotesk Display Pro 45 Light'), url('../assets/NeueHaasDisplayLight.woff') format('woff');
+}
 
 
 /*=======Regular=======*/
@@ -47,22 +54,6 @@
     font-weight:400;
 	unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
     src: local('Neue Haas Grotesk Display Pro 55 Roman'), url('../assets/fonts/NeueHaasDisplayRoman.woff') format('woff');
-    /* src:url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.eot"); */
-    /* src:url(
-        "//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.eot?#iefix"
-    )format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.woff2")format(
-        "woff2"
-    ),
-    url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.woff")format(
-        "woff"
-    ),
-    url("//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.ttf")format(
-        "truetype"
-    ),
-    url(
-        "//db.onlinewebfonts.com/t/02d8bfeaeb805e69f0b04e0f78697ec3.svg#NHaasGroteskDSPro-55Rg"
-    )format("svg"); */
 }
 
 @font-face {

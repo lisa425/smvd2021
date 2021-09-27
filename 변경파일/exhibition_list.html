@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMVD 2021 졸업전시회 Entry:참여자들</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/exhibition_list.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/zepto@1.2.0/dist/zepto.js,npm/zepto@1.2.0/src/fx.js?ver=5.3.2"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.js?ver=5.3.2"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="ezkorry-roller">
+                <span class="header-item">
+                    <a href="../index.html">
+                        <span>SMVD 2021 GRAD SHOW</span>
+                        <img class="header-polygon" src="../assets/images/header_polygon.svg" alt="little polygon"/>
+                    </a>
+                </span>
+        </div>
+        <div class="part">
+            <!-- back 버튼 클릭 시 홈페이지 url로 넘어가야 합니다. 현재는 index.html 파일로만 넘겨주고 있습니다.-->
+            <button class="back-btn">
+                <a href="../index.html"><img src="../assets/images/back_btn.svg" alt="go back"/></a>
+            </button>
+            <h1 class="menu-title">Exhibition</h1>
+            <button class="mobile nav-open-btn" onclick="openCategory()">
+                <img src="../assets/images/mobile_open_category.svg" alt="카테고리">
+            </button>
+        </div>
+    </header>
+
+    <main class="exhibition">
+        <nav class="category" id="category">
+            <ul class="art-category" id="art_category">
+                <li id="branding_nav" onclick="clickCategory(this.id)"><a href="#branding">Branding</a></li>
+                <li id="editorial_nav" onclick="clickCategory(this.id)"><a href="#editorial">Editorial</a></li>
+                <li id="uxui_nav" onclick="clickCategory(this.id)"><a href="#uxui">UX/UI</a></li>
+                <li id="motion_nav" onclick="clickCategory(this.id)"><a href="#motion">Motion</a></li>
+                <li id="graphic_nav" onclick="clickCategory(this.id)"><a href="#graphic">Graphic</a></li>
+                <li id="game_nav" onclick="clickCategory(this.id)"><a href="#game">Game</a></li>
+                <li id="illustration_nav" onclick="clickCategory(this.id)"><a href="#illustration">Illustration</a></li>
+                <li id="list-search-li">
+                    <!-- 작품 검색창 -->
+                    <form action="" id="list-search-form" class="list-search">
+                        <input class="list-search-input" type="text" placeholder="Search"/>
+                        <button class="list-search-submit" type="submit"><img src="../assets/images/search_btn.svg" alt="search button"></button> 
+                    </form>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- 전시물 리스트가 들어갑니다.-->
+        <section class="exhibition-list">
+
+            <!-- 카테고리 'branding'으로 등록된 작품 리스트 -->
+            <article id="branding" class="orange-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/02_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">VobaVoba forest</h2>
+                                <span class="std-name">강수연</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/14_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">PPOMO</h2>
+                                <span class="std-name">김지원</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'editorial'으로 등록된 작품 리스트 -->
+            <article id="editorial" class="gray-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/09_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">요상한 독일어</h2>
+                                <span class="std-name">김민주</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'uxui'으로 등록된 작품 리스트 -->
+            <article id="uxui" class="white-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/03_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Roady</h2>
+                                <span class="std-name">구자영</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- 카테고리 'motion'으로 등록된 작품 리스트 -->
+            <article id="motion" class="orange-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/22_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">티퍼티 time per tea, tea per time</h2>
+                                <span class="std-name">선민경</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리-'graphic'으로 등록된 작품 리스트 -->
+            <article id="graphic" class="gray-back artworks">
+                <div class="list-wrapper">
+                    <!-- list-item: 개별 작품-->
+                    <div class="list-item">
+                        <!-- a: 각 작품의 디테일 페이지로 이동하는 url이 들어가면 됩니다. -->
+                        <a href="./exhibition_detail.html">
+                            <!-- list-thumnail: 등록한 이미지 썸네일이 들어갑니다. -->
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/16_thumbnail.jpg" alt="artwork image"/>
+                            <!-- list-info: 각 작품의 정보, 제목, 학생명이 들어갑니다.-->
+                            <div class="list-info">
+                                <!-- 제목 -->
+                                <h2 class="title">요상한 독일어 단어집</h2>
+                                <!-- 학생명 -->
+                                <span class="std-name">김민주</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'game'으로 등록된 작품 리스트 -->
+            <article id="game" class="white-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/06_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Bloom</h2>
+                                <span class="std-name">김가영</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 카테고리 'illustration'으로 등록된 작품 리스트 -->
+            <article id="illustration" class="orange-back artworks">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <a href="./exhibition_detail.html">
+                            <img class="list-thumbnail" src="../assets/images/thumbnail/01_thumbnail.jpg" alt="artwork image"/>
+                            <div class="list-info">
+                                <h2 class="title">Ready &amp; Leaf</h2>
+                                <span class="std-name">강경지</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <a href="./guestbook.html" class="guestbook-btn-link">
+        <button class="guestbook-btn">
+            <p>방명록<br>Guestbook</p>
+        </button>
+    </a>
+    <img id="scroll_arrow" class="scroll_arrow" src="../assets/images/Arrow.svg" alt="스크롤을 내리세요."/>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+<script type="text/javascript" src="../js/scroll_event.js"></script>
+<script type="text/javascript" src="../js/open_category.js"></script>
+</html>
