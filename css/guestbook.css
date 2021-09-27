@@ -48,6 +48,7 @@ textarea:focus{
     font-size: 17px;
 }
 .search-std select{
+    color:black;
     border-bottom:3px solid black;
     margin-right: 17px;
     padding-bottom: 4px;

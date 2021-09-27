@@ -1,8 +1,12 @@
 @import "./css/reset.css";
-
+body{
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
 .mainpage{
     width:100vw;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
     left:0;
@@ -100,7 +104,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    /* max-width:881px; */
     max-width:980px;
     margin:5vh 0;
 }
@@ -206,13 +209,76 @@
 .exhibition-credit .credit-list{
     width:calc(100% - 116px);
     padding-left:58px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+}
+.professor-kr{
+    grid-column: 1;
+    grid-row:1;
+}
+.professor-en{
+    grid-column: 2;
+    grid-row:1;
+}
+.committee-kr{
+    grid-column: 1;
+    grid-row:2;
+}
+.committee-en{
+    grid-column: 2;
+    grid-row:2;
+}
+.preface-kr{
+    grid-column: 1;
+    grid-row:3;
+}
+.preface-en{
+    grid-column: 2;
+    grid-row:3;
+}
+.identity-kr{
+    grid-column: 1;
+    grid-row:4;
+}
+.identity-en{
+    grid-column: 2;
+    grid-row:4;
+}
+.motion-kr{
+    grid-column: 1;
+    grid-row:5;
+}
+.motion-en{
+    grid-column: 2;
+    grid-row:5;
+}
+.web-design-kr{
+    grid-column: 1;
+    grid-row:6;
+}
+.web-design-en{
+    grid-column: 2;
+    grid-row:6;
+}
+.web-development-kr{
+    grid-column: 1;
+    grid-row:7;
+}
+.web-development-en{
+    grid-column: 2;
+    grid-row:7;
+}
+/* .exhibition-credit .credit-list{
+    width:calc(100% - 116px);
+    padding-left:58px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 .exhibition-credit .credit-list .credit-kr .committee p{
     margin-right:20px;
-}
+} */
 .exhibition-credit .entry-btn{
     width:100%;
     height:71px;
@@ -242,11 +308,7 @@
     font-weight: 400;
     line-height: 1.7em;
 }
-.credit-list .credit-kr h3{
-    font-weight:700;
-    margin:10px 0;
-}
-.credit-list .credit-en h3{
+.credit-list h3{
     font-weight:700;
     margin:10px 0;
 }
@@ -412,9 +474,12 @@
     }
     .main-title .title-name .title-kr{
         width:35%;
+        position: relative;
+        left:10px;
     }
     .main-title .title-name .title-en{
         width:40%;
+        left:34px;
     }
     .section-title{
         font-size: 20px;
@@ -445,12 +510,12 @@
     .exhibition-credit .credit-list .credit-kr .committee p{
         width:100%;
     }
-    .credit-list section{
-        width:45%;
+    .committee-kr{
+        width:87%;
     }
     .credit-list div{
         font-size:13px;
-        margin-bottom: 26px;
+        margin-bottom: 16px;
         line-height: 20px;
     }
     
@@ -520,13 +585,10 @@
     .main-title .title-name p span{
         left:0;
     }
-    .exhibition-credit .credit-list{
-        flex-direction: column;
-    }
-    .credit-list section{
-        width:100%;
-    }
-    .exhibition-credit .credit-list .credit-kr .committee p{
+    .exhibition-credit .credit-list .committee p{
         margin-right: 0;
+    }
+    .identity-kr{
+        width:77%;
     }
 }
