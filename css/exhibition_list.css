@@ -363,27 +363,27 @@ input:focus{
    .art-category li{
        margin:0;
    }
-   #graphic_nav{
-       grid-column: 1;
-       grid-row:1;
-   }
    #branding_nav{
-       grid-column: 2;
+       grid-column: 1;
        grid-row:1;
    }
    #editorial_nav{
+       grid-column: 2;
+       grid-row:1;
+   }
+   #uxui_nav{
        grid-column: 1;
        grid-row:2;
    }
-   #uxui_nav{
+   #motion_nav{
        grid-column: 2;
        grid-row:2;
    }
-   #game_nav{
+   #graphic_nav{
        grid-column: 1;
        grid-row:3;
    }
-   #motion_nav{
+   #game_nav{
        grid-column: 2;
        grid-row:3;
    }
