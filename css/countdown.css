@@ -1,0 +1,135 @@
+/*오픈 전 카운트다운 페이지*/
+@import './reset.css';
+#open-countdown{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+.countdown-container{
+    width:100vw;
+    height:100vh;
+    font-size:5vw;
+    font-weight: 700;
+    line-height: 6vw;
+    position: absolute;
+    top:0;
+    overflow: hidden;
+}
+.back-video{
+    width:100%;
+    height:100%;
+    object-fit: fill;
+    border:none;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    left: 0;
+    top:20px;
+    z-index:0;
+}
+.countdown-container .logo{
+    position: absolute;
+    right:2.9vw;
+    top:10vh;
+}
+.count-section{
+    position: relative;
+    left:2.9vw;
+    top:12vh;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    width:52vw;
+}
+.count-section div{
+    grid-column: 1;
+    grid-row:1;
+}
+.count-section p{
+    grid-column: 2;
+    grid-row:2;
+    font-size:2.8vw;
+    line-height: 1.2em;
+    position: relative;
+    left:-3vw;
+    top:1vw;
+    font-weight: 400;
+}
+#dday{
+    font-size: 9.5vw;
+    margin-bottom:3vw;
+}
+#countdown{
+    font-size: 8.3vw;
+}
+.title-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 1.1em;
+    font-size: 7vw;
+    position: absolute;
+    right:4.2vw;
+    bottom:10vh;
+    font-weight: 400;
+}
+.title-section .title-kr{
+    position: relative;
+    top:1.3vw;
+    left:1.3vw;
+}
+.univ-kr{
+    position: absolute;
+    left:2.9vw;
+    bottom:8.6vh;
+    font-size:2vw;
+    line-height: 1.3em;
+    letter-spacing: -0.05em;
+    word-spacing: 0.2em;
+    font-weight: 400;
+}
+.univ-kr span{
+    letter-spacing: 0em;
+}
+
+@media screen and (max-width:480px){
+    .back-video{
+        width:auto;
+        left:-50vw;
+    }
+    .countdown-container .logo{
+        top: 10vw;
+        right: 3.5vw;
+        width: 10vw;
+        max-width: 40px;
+    }
+    .count-section{
+        width:auto;
+        left:3.5vw;
+    }
+    #dday{
+        font-size: 20vw;
+        margin-bottom: 12vw;
+    }
+    #countdown{
+        font-size: 15vw;
+    }
+    .count-section p{
+        font-size: 6.5vw;
+    }
+    .title-section{
+        font-size:18vw;
+        left:3.5vw;
+        right:auto;
+    }
+    .title-section .title-kr{
+        top:3.5vw;
+        left:3.5vw;
+    }
+    .univ-kr{
+        left: 4.8vw;
+        font-size: 4vw;
+        bottom: 65vw;
+    }
+
+}

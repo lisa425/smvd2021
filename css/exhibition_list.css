@@ -334,6 +334,7 @@ input:focus{
        border-right: none;
        border-bottom: 2px solid black;
        visibility: hidden;
+       background-color: white;
    } 
    .nav-open-btn{
        position: absolute;
@@ -404,7 +405,7 @@ input:focus{
    }
    .list-search-input{
        font-size: 2.7vh;
-       padding:0;
+       padding:3px 0;
        top:-2px;
    }
    .list-search-input::placeholder{
