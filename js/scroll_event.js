@@ -1,6 +1,6 @@
 //scroll 유도 화살표.
 function removeScrollArrow(){
-	const scroll_arrow = document.querySelector('#scroll_arrow');
+	const scroll_arrow = document.getElementById('scroll_arrow');
 	scroll_arrow.classList.remove('scroll_arrow');
 }
 
@@ -12,45 +12,45 @@ function setScrollUnderline(){
 	//*********************변경*********************
     const categoryInfo = [
         {
-            container:document.querySelector('#branding'),
-            scrollHeight: 0
+            container:document.getElementById('branding'),
+            scrollheight: 0
         },
         {
-            container: document.querySelector('#editorial'),
-            scrollHeight: 0
+            container: document.getElementById('editorial'),
+            scrollheight: 0
         }, 
         {
-            container: document.querySelector('#uxui'),
-            scrollHeight: 0
+            container: document.getElementById('uxui'),
+            scrollheight: 0
         }, 
         {
-            container: document.querySelector('#motion'),
-            scrollHeight: 0
+            container: document.getElementById('motion'),
+            scrollheight: 0
         }, 
 		{
-            container:document.querySelector('#graphic'),
-            scrollHeight: 0
+            container:document.getElementById('graphic'),
+            scrollheight: 0
         },
 		{
-            container: document.querySelector('#game'),
-            scrollHeight: 0
+            container: document.getElementById('game'),
+            scrollheight: 0
         }, 
         {
-            container: document.querySelector('#illustration'),
-            scrollHeight: 0
+            container: document.getElementById('illustration'),
+            scrollheight: 0
         }
     ]
 
     function setLayout(){
 		//각 스크롤 섹션 높이 세팅
 		for (let i=0; i<categoryInfo.length; i++){
-			categoryInfo[i].scrollHeight = categoryInfo[i].container.clientHeight;
+			categoryInfo[i].scrollheight = categoryInfo[i].container.clientHeight;
 		}
 
 		yOffset = window.pageYOffset;
 		let totalScrollHeight = 0;
 		for(let i = 0; i<categoryInfo.length; i++){
-			totalScrollHeight += categoryInfo[i].scrollHeight;
+			totalScrollHeight += categoryInfo[i].scrollheight;
 			if(totalScrollHeight >= yOffset){
 				currentScene = i;
 				break;
@@ -63,10 +63,10 @@ function setScrollUnderline(){
 	function scrollLoop(){
 		prevScrollHeight = 0;
 		for(let i = 0; i < currentScene; i++){
-			prevScrollHeight += categoryInfo[i].scrollHeight;
+			prevScrollHeight += categoryInfo[i].scrollheight;
 		}
 
-		if(yOffset > prevScrollHeight+categoryInfo[currentScene].scrollHeight){
+		if(yOffset > prevScrollHeight + categoryInfo[currentScene].scrollheight){
 			currentScene++;
 		}
 		if(yOffset < prevScrollHeight){
@@ -76,15 +76,13 @@ function setScrollUnderline(){
 		document.body.setAttribute('id',`show-category-${currentScene}`);
 	}
 
-
+	window.addEventListener('load',setLayout());
 	window.addEventListener('resize',setLayout());
 	window.addEventListener('scroll',()=>{
 		yOffset = window.pageYOffset;
 		scrollLoop();
 		removeScrollArrow();
 	})
-	window.addEventListener('load',setLayout);
-	window.addEventListener('resize',setLayout);
 };
 
 //카테고리 버튼 클릭 시 현재 씬 변경
@@ -125,13 +123,13 @@ function clickCategory(id){
 function removeScrollEvent(){
 	document.body.removeAttribute('id',`show-category-0`);
 
-	const graphic_nav = document.querySelector('#graphic_nav');
-	const branding_nav = document.querySelector('#branding_nav');
-	const editorial_nav = document.querySelector('#editorial_nav');
-	const uxui_nav = document.querySelector('#uxui_nav');
-	const game_nav = document.querySelector('#game_nav');
-	const motion_nav = document.querySelector('#motion_nav');
-	const illustration_nav = document.querySelector('#illustration_nav');
+	const graphic_nav = document.getElementById('graphic_nav');
+	const branding_nav = document.getElementById('branding_nav');
+	const editorial_nav = document.getElementById('editorial_nav');
+	const uxui_nav = document.getElementById('uxui_nav');
+	const game_nav = document.getElementById('game_nav');
+	const motion_nav = document.getElementById('motion_nav');
+	const illustration_nav = document.getElementById('illustration_nav');
 
 	graphic_nav.removeAttribute("onclick");
 	branding_nav.removeAttribute("onclick");
