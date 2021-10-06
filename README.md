@@ -1,6 +1,6 @@
 # 2021 SMVD GRADUATION EXHIBITION WEBSITE
-![main_poster](./assets/images/example_img/main_poster_horizontal.png)
-2021 숙명여자대학교 시각영상디자인과 졸업전시회 웹사이트 전체 퍼블리싱 작업 및 기획,디자인 진행
+>[전시 사이트 바로가기](http://smvdgradshow.com/2021)
+<p>2021 숙명여자대학교 시각영상디자인과 졸업전시회 웹사이트 전체 퍼블리싱 작업 및 기획,디자인 진행</p>
 
 ## key function
 ### 1.open intro interaction
