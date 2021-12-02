@@ -1,26 +1,21 @@
-# 2021년도 숙명여자대학교 시각영상디자인과 온라인 졸업전시회
->[전시 사이트 바로가기](http://smvdgradshow.com/2021)
-<p>2021년도 숙명여자대학교 시각영상디자인과 온라인 졸업전시회 웹사이트의 전체 프론트엔드 구현 작업 및 기획,디자인 진행을 담당하였습니다.</p>
+# 2021년도 숙명여자대학교 시각영상디자인과<br>온라인 졸업전시회
+👉 [전시 사이트 바로가기](http://smvdgradshow.com/2021)
+<p>2021년도 숙명여자대학교 시각영상디자인과 온라인 졸업전시회 웹사이트의 전체 프론트엔드 구현 작업 및 기획,디자인 진행을 담당한 프로젝트입니다.</p>
 
 ## 사용 기술
-### ⚙️ Front-end ⚙️
+<b>Frontend</b>: HTML,CSS,JavaScript만을 이용하여 전체 페이지 레이아웃과 인터랙션을 구현하였습니다.<br>
+<b>Backend</b>: PHP를 이용하여 구현하였습니다.<br>
 <div>
   <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=HTML5&logoColor=white"/>
   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
   <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PHP-1572B6?style=flat-square&logo=PHP&logoColor=white"/>
 </div>
-HTML,CSS,JavaScript만을 이용하여 전체 페이지 레이아웃과 인터랙션을 구현하였습니다.<br>
-
-### ⚙️ Back-end ⚙️
-<div>
-<img src="https://img.shields.io/badge/PHP-1572B6?style=flat-square&logo=PHP&logoColor=white"/>
-</div>
-PHP를 이용하여 구현하였습니다.
 
 ## 기여도
 <b>프론트엔드 : 100%</b><br>
-> 디자인 : 50%<br>
-> 기획 : 50%
+디자인 : 50%<br>
+기획 : 50%
 
 ## 구현 내용
 ### 1.인트로 오픈 인터랙션(open intro interaction)
